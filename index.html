@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MoonIK — 일상을 더 나답게 만드는 앱</title>
-<meta name="description" content="MoonIK는 일상을 더 나답게 만드는 앱을 만듭니다. 첫 번째 앱 '달래'를 만나보세요." />
+<title data-i18n-title="meta.title">MoonIK — 일상을 더 나답게 만드는 앱</title>
+<meta name="description" content="MoonIK는 일상을 더 나답게 만드는 앱을 만듭니다. 첫 번째 앱 '달래'를 만나보세요." data-i18n-content="meta.desc" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" type="image/png" href="assets/dallae-icon.png" />
+<script src="i18n.js" defer></script>
 </head>
 <body>
 
@@ -15,11 +16,14 @@
     <nav>
       <div class="logo">Moon<span>IK</span></div>
       <div class="nav-links">
-        <a href="#dallae">달래</a>
-        <a href="#apps">앱 라인업</a>
-        <a href="#about">회사 소개</a>
+        <a href="#dallae" data-i18n="nav.dallae">달래</a>
+        <a href="#apps" data-i18n="nav.apps">앱 라인업</a>
+        <a href="#about" data-i18n="nav.about">회사 소개</a>
       </div>
-      <a href="#dallae" class="btn btn-primary">달래 살펴보기</a>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <button id="lang-toggle" class="btn btn-ghost" onclick="moonikLang.toggle()" style="padding:8px 14px; font-size:12px;">EN</button>
+        <a href="#dallae" class="btn btn-primary" data-i18n="nav.cta">달래 살펴보기</a>
+      </div>
     </nav>
   </div>
 </header>
@@ -27,12 +31,12 @@
 <main>
   <section class="hero">
     <div class="wrap">
-      <span class="badge">MoonIK · 앱 스튜디오</span>
-      <h1>시간을 심으면<br /><span class="accent">정원이 자랍니다</span></h1>
-      <p>MoonIK는 사람들의 하루를 조금 더 가볍고 즐겁게 만드는 앱을 만드는 회사입니다. 첫 번째 앱 '달래'를 시작으로, 더 많은 앱을 준비하고 있습니다.</p>
+      <span class="badge" data-i18n="hero.badge">MoonIK · 앱 스튜디오</span>
+      <h1 data-i18n="hero.title">시간을 심으면<br /><span class="accent">정원이 자랍니다</span></h1>
+      <p data-i18n="hero.desc">MoonIK는 사람들의 하루를 조금 더 가볍고 즐겁게 만드는 앱을 만드는 회사입니다. 첫 번째 앱 '달래'를 시작으로, 더 많은 앱을 준비하고 있습니다.</p>
       <div class="hero-actions">
-        <a href="#dallae" class="btn btn-primary btn-lg">달래 만나보기</a>
-        <a href="#apps" class="btn btn-ghost btn-lg">전체 라인업 보기</a>
+        <a href="#dallae" class="btn btn-primary btn-lg" data-i18n="hero.cta1">달래 만나보기</a>
+        <a href="#apps" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">전체 라인업 보기</a>
       </div>
     </div>
   </section>
@@ -44,27 +48,27 @@
           <img src="assets/dallae-icon.png" alt="달래 앱 아이콘" style="width:140px; height:140px; border-radius:32px;" />
         </div>
         <div class="flagship-body">
-          <span class="flagship-badge">MoonIK의 첫 번째 앱</span>
+          <span class="flagship-badge" data-i18n="dallae.badge">MoonIK의 첫 번째 앱</span>
           <h3>달래</h3>
-          <p class="tagline">시간을 심으면 정원이 자라는 목표 관리 앱</p>
-          <p class="desc">달래는 이루고 싶은 목표를 씨앗으로 심고, 거기에 쏟은 시간만큼 나만의 정원에 꽃을 피우는 성장 앱입니다. 진달래, 패랭이꽃 같은 한국의 자생화가 내가 투자한 시간을 따라 하나씩 피어나요.</p>
+          <p class="tagline" data-i18n="dallae.tagline">시간을 심으면 정원이 자라는 목표 관리 앱</p>
+          <p class="desc" data-i18n="dallae.desc">달래는 이루고 싶은 목표를 씨앗으로 심고, 거기에 쏟은 시간만큼 나만의 정원에 꽃을 피우는 성장 앱입니다. 진달래, 패랭이꽃 같은 한국의 자생화가 내가 투자한 시간을 따라 하나씩 피어나요.</p>
           <div class="mini-features">
             <div class="mini-feature">
               <div class="dot">✓</div>
-              <div><strong>씨앗으로 심는 목표</strong><span class="sub">목표를 씨앗으로 심고, 하위 목표로 가지를 뻗어나가며 정리해요.</span></div>
+              <div data-i18n="feature1"><strong>씨앗으로 심는 목표</strong><span class="sub">목표를 씨앗으로 심고, 하위 목표로 가지를 뻗어나가며 정리해요.</span></div>
             </div>
             <div class="mini-feature">
               <div class="dot">✓</div>
-              <div><strong>시간이 꽃이 되는 정원</strong><span class="sub">타이머로 기록한 시간만큼 나만의 정원에 자생화가 피어나요.</span></div>
+              <div data-i18n="feature2"><strong>시간이 꽃이 되는 정원</strong><span class="sub">타이머로 기록한 시간만큼 나만의 정원에 자생화가 피어나요.</span></div>
             </div>
             <div class="mini-feature">
               <div class="dot">✓</div>
-              <div><strong>친구의 정원 구경하기</strong><span class="sub">친구를 추가하고 서로의 성장 정원을 방문해 응원할 수 있어요.</span></div>
+              <div data-i18n="feature3"><strong>친구의 정원 구경하기</strong><span class="sub">친구를 추가하고 서로의 성장 정원을 방문해 응원할 수 있어요.</span></div>
             </div>
           </div>
           <div class="hero-actions" style="justify-content:flex-start;">
-            <a href="dallae.html" class="btn btn-primary">달래 자세히 보기</a>
-            <a href="#" class="btn btn-ghost">Google Play (준비 중)</a>
+            <a href="dallae.html" class="btn btn-primary" data-i18n="dallae.detailBtn">달래 자세히 보기</a>
+            <a href="#" class="btn btn-ghost" data-i18n="dallae.playBtn">Google Play (준비 중)</a>
           </div>
         </div>
       </div>
@@ -75,8 +79,8 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Our Apps</span>
-        <h2>MoonIK의 앱 라인업</h2>
-        <p>달래를 시작으로 다양한 일상 속 앱을 계속 선보일 예정입니다.</p>
+        <h2 data-i18n="apps.title">MoonIK의 앱 라인업</h2>
+        <p data-i18n="apps.desc">달래를 시작으로 다양한 일상 속 앱을 계속 선보일 예정입니다.</p>
       </div>
       <div class="apps-grid">
         <a href="dallae.html" class="app-card" style="cursor:pointer;">
@@ -84,19 +88,19 @@
             <img src="assets/dallae-icon-64.png" alt="달래 아이콘" style="width:40px; height:40px; border-radius:12px;" />
           </div>
           <h4>달래</h4>
-          <p>시간을 심으면 정원이 자라는 목표 관리 앱</p>
+          <p data-i18n="dallae.tagline">시간을 심으면 정원이 자라는 목표 관리 앱</p>
           <span class="soon-tag" style="color:var(--accent2);">In Development</span>
         </a>
         <div class="app-card soon">
           <div class="app-icon-sm">?</div>
-          <h4>다음 앱 준비 중</h4>
-          <p>MoonIK의 다음 앱을 준비하고 있습니다.</p>
+          <h4 data-i18n="appcard2.title">다음 앱 준비 중</h4>
+          <p data-i18n="appcard2.desc">MoonIK의 다음 앱을 준비하고 있습니다.</p>
           <span class="soon-tag">Coming Soon</span>
         </div>
         <div class="app-card soon">
           <div class="app-icon-sm">?</div>
-          <h4>다음 앱 준비 중</h4>
-          <p>더 많은 이야기로 곧 찾아뵐게요.</p>
+          <h4 data-i18n="appcard2.title">다음 앱 준비 중</h4>
+          <p data-i18n="appcard3.desc">더 많은 이야기로 곧 찾아뵐게요.</p>
           <span class="soon-tag">Coming Soon</span>
         </div>
       </div>
@@ -106,19 +110,19 @@
   <section id="about">
     <div class="wrap about">
       <span class="eyebrow" style="color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.08em; display:block; margin-bottom:12px;">About MoonIK</span>
-      <h2 style="font-size:clamp(24px,4vw,34px); font-weight:800; letter-spacing:-0.02em; margin-bottom:16px;">더 나답게, 더 함께</h2>
-      <p>MoonIK는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다. 혼자보다 함께일 때 더 오래 지속된다는 믿음으로, 일상에 스며드는 작은 커뮤니티 경험을 설계합니다.</p>
+      <h2 style="font-size:clamp(24px,4vw,34px); font-weight:800; letter-spacing:-0.02em; margin-bottom:16px;" data-i18n="about.title">더 나답게, 더 함께</h2>
+      <p data-i18n="about.desc">MoonIK는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다. 혼자보다 함께일 때 더 오래 지속된다는 믿음으로, 일상에 스며드는 작은 커뮤니티 경험을 설계합니다.</p>
     </div>
   </section>
 
   <section id="cta-section">
     <div class="wrap">
       <div class="cta">
-        <h2>달래, 지금 준비하고 있어요</h2>
-        <p>MoonIK의 첫 번째 앱 달래를 개발하고 있습니다. 출시 소식을 가장 먼저 받아보세요.</p>
+        <h2 data-i18n="cta.title">달래, 지금 준비하고 있어요</h2>
+        <p data-i18n="cta.desc">MoonIK의 첫 번째 앱 달래를 개발하고 있습니다. 출시 소식을 가장 먼저 받아보세요.</p>
         <div class="hero-actions">
-          <a href="dallae.html" class="btn btn-primary btn-lg">달래 자세히 보기</a>
-          <a href="mailto:hello@moonik.net" class="btn btn-ghost btn-lg">출시 소식 받기</a>
+          <a href="dallae.html" class="btn btn-primary btn-lg" data-i18n="dallae.detailBtn">달래 자세히 보기</a>
+          <a href="mailto:hello@moonik.net" class="btn btn-ghost btn-lg" data-i18n="cta.btn2">출시 소식 받기</a>
         </div>
       </div>
     </div>
@@ -129,9 +133,9 @@
   <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; width:100%;">
     <span>© 2026 MoonIK. All rights reserved.</span>
     <div class="foot-links">
-      <a href="#">이용약관</a>
-      <a href="#">개인정보처리방침</a>
-      <a href="mailto:hello@moonik.net">문의하기</a>
+      <a href="#" data-i18n="footer.terms">이용약관</a>
+      <a href="#" data-i18n="footer.privacy">개인정보처리방침</a>
+      <a href="mailto:hello@moonik.net" data-i18n="footer.contact">문의하기</a>
     </div>
   </div>
 </footer>
