@@ -227,5 +227,22 @@
     }
   };
 
+  window.moonikNav = {
+    toggle: function () {
+      var links = document.querySelector(".nav-links");
+      if (links) links.classList.toggle("open");
+    },
+    close: function () {
+      var links = document.querySelector(".nav-links");
+      if (links) links.classList.remove("open");
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".nav-links a").forEach(function (a) {
+      a.addEventListener("click", window.moonikNav.close);
+    });
+  });
+
   applyLang(detectLang());
 })();
