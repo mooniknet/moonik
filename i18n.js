@@ -16,7 +16,7 @@
       "hero.cta2": "전체 라인업 보기",
       "dallae.badge": "MoonIK의 첫 번째 앱",
       "dallae.name": "달래",
-      "dallae.nameFull": "달래 <span style=\"opacity:0.5; font-weight:600; font-size:0.5em; letter-spacing:0.06em; margin-left:8px;\">(DALLAE)</span>",
+      "dallae.nameFull": "달래 <span style=\"opacity:0.5; font-weight:600; font-size:0.5em; letter-spacing:0.06em; margin-left:8px;\">(Dallae)</span>",
       "dallae.tagline": "시간을 심으면 정원이 자라는 목표 관리 앱",
       "dallae.desc": "달래는 이루고 싶은 목표를 씨앗으로 심고, 거기에 쏟은 시간만큼 나만의 정원에 꽃을 피우는 성장 앱입니다. 진달래, 패랭이꽃 같은 한국의 자생화가 내가 투자한 시간을 따라 하나씩 피어나요.",
       "feature1": "<strong>씨앗으로 심는 목표</strong><span class=\"sub\">목표를 씨앗으로 심고, 하위 목표로 가지를 뻗어나가며 정리해요.</span>",
