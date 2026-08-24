@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title data-i18n-title="aboutPage.title">MoonIK 소개 — 더 나답게, 더 함께</title>
+<meta name="description" content="MoonIK는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다." data-i18n-content="aboutPage.desc" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/dallae-icon.png" />
+<script src="i18n.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo">Moon<span>IK</span></a>
+      <div class="nav-links">
+        <a href="index.html#dallae" data-i18n="nav.dallae">달래</a>
+        <a href="index.html#apps" data-i18n="nav.apps">앱 라인업</a>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <button id="lang-toggle" class="btn btn-ghost" onclick="moonikLang.toggle()" style="padding:8px 14px; font-size:12px;">EN</button>
+        <a href="index.html" class="btn btn-ghost" data-i18n="nav.back">← MoonIK로 돌아가기</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap about">
+      <h1 style="font-size:clamp(30px, 5.5vw, 52px);" data-i18n="about.title">더 나답게, 더 함께</h1>
+      <p data-i18n="about.desc">MoonIK는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다. 혼자보다 함께일 때 더 오래 지속된다는 믿음으로, 일상에 스며드는 작은 커뮤니티 경험을 설계합니다.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; width:100%;">
+    <span>© 2026 MoonIK. All rights reserved.</span>
+    <div class="foot-links">
+      <a href="index.html" data-i18n="footer.home">홈</a>
+      <a href="#" data-i18n="footer.terms">이용약관</a>
+      <a href="mailto:hello@moonik.net" data-i18n="footer.contact">문의하기</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

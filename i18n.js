@@ -40,6 +40,9 @@
       "footer.contact": "문의하기",
       "footer.home": "홈",
 
+      "aboutPage.title": "MoonIK 소개 — 더 나답게, 더 함께",
+      "aboutPage.desc": "MoonIK는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다.",
+
       "dallaePage.title": "달래 — 시간을 심으면 정원이 자랍니다 | MoonIK",
       "dallaePage.desc": "달래는 목표를 씨앗으로 심고, 투자한 시간만큼 나만의 정원에 꽃이 피어나는 MoonIK의 성장 앱입니다.",
       "dallaePage.hero.desc": "달래는 이루고 싶은 목표를 씨앗으로 심고, 거기에 쏟은 시간만큼 나만의 정원에 꽃을 피우는 성장 앱입니다. 혼자여도 외롭지 않게, 친구의 정원에 놀러가 서로의 성장을 응원할 수 있어요.",
@@ -117,6 +120,9 @@
       "footer.privacy": "Privacy Policy",
       "footer.contact": "Contact",
       "footer.home": "Home",
+
+      "aboutPage.title": "About MoonIK — More like yourself, together",
+      "aboutPage.desc": "MoonIK builds apps that help people care for themselves and grow at their own pace.",
 
       "dallaePage.title": "Dallae — Plant your time, watch a garden grow | MoonIK",
       "dallaePage.desc": "Dallae is MoonIK's growth app: plant your goals as seeds and watch flowers bloom in your garden as you invest time.",
