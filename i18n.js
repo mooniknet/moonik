@@ -2,7 +2,7 @@
   var dict = {
     ko: {
       "meta.title": "MoonIK — 일상을 더 나답게 만드는 앱",
-      "meta.desc": "MoonIK는 일상을 더 나답게 만드는 앱을 만듭니다. 첫 번째 앱 '달래'를 만나보세요.",
+      "meta.desc": "문익(MoonIK)는 일상을 더 나답게 만드는 앱을 만듭니다. 첫 번째 앱 '달래'를 만나보세요.",
       "nav.dallae": "달래",
       "nav.apps": "앱 라인업",
       "nav.about": "회사 소개",
@@ -12,7 +12,7 @@
       "hero.badge": "MoonIK · 앱 스튜디오",
       "company.headline": "일상을 더<br /><span class=\"accent\">나답게 만드는 앱</span>",
       "garden.headline": "시간을 심으면<br /><span class=\"accent\">정원이 자랍니다</span>",
-      "hero.desc": "MoonIK는 사람들의 하루를 조금 더 가볍고 즐겁게 만드는 앱을 만드는 회사입니다. 첫 번째 앱 '달래'를 시작으로, 더 많은 앱을 준비하고 있습니다.",
+      "hero.desc": "문익(MoonIK)는 사람들의 하루를 조금 더 가볍고 즐겁게 만드는 앱을 만드는 회사입니다. 첫 번째 앱 '달래'를 시작으로, 더 많은 앱을 준비하고 있습니다.",
       "hero.cta1": "달래 만나보기",
       "hero.cta2": "전체 라인업 보기",
       "dallae.badge": "MoonIK의 첫 번째 앱",
@@ -31,7 +31,7 @@
       "appcard2.desc": "MoonIK의 다음 앱을 준비하고 있습니다.",
       "appcard3.desc": "더 많은 이야기로 곧 찾아뵐게요.",
       "about.title": "더 나답게, 더 함께",
-      "about.desc": "MoonIK는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다. 혼자보다 함께일 때 더 오래 지속된다는 믿음으로, 일상에 스며드는 작은 커뮤니티 경험을 설계합니다.",
+      "about.desc": "문익(MoonIK)는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다. 혼자보다 함께일 때 더 오래 지속된다는 믿음으로, 일상에 스며드는 작은 커뮤니티 경험을 설계합니다.",
       "cta.title": "달래, 지금 준비하고 있어요",
       "cta.desc": "MoonIK의 첫 번째 앱 달래를 개발하고 있습니다. 출시 소식을 가장 먼저 받아보세요.",
       "cta.btn2": "출시 소식 받기",
@@ -41,12 +41,12 @@
       "footer.home": "홈",
 
       "aboutPage.title": "MoonIK 소개 — 더 나답게, 더 함께",
-      "aboutPage.desc": "MoonIK는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다.",
+      "aboutPage.desc": "문익(MoonIK)는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다.",
       "philosophy.eyebrow": "Our Name",
       "philosophy.title": "왜 MoonIK일까요",
       "philosophy.intro": "이름 안에 저희가 지키고 싶은 마음을 담았어요.",
       "philosophy.moon.title": "Moon, 달빛처럼",
-      "philosophy.moon.desc": "달빛은 해처럼 눈부시지 않아요. 대신 어두운 밤에도 길을 잃지 않을 만큼, 딱 필요한 만큼만 조용히 비춰주죠. MoonIK도 다그치지 않고, 각자의 속도를 지켜보며 은은히 곁을 지키는 존재가 되고 싶습니다.",
+      "philosophy.moon.desc": "달빛은 해처럼 눈부시지 않아요. 대신 어두운 밤에도 길을 잃지 않을 만큼, 딱 필요한 만큼만 조용히 비춰주죠. 문익(MoonIK)도 다그치지 않고, 각자의 속도를 지켜보며 은은히 곁을 지키는 존재가 되고 싶습니다.",
       "philosophy.ik.title": "IK, Include Kindness",
       "philosophy.ik.desc": "IK는 'Include Kindness'에서 왔어요. 잘하고 있을 때만 향하는 친절이 아니라, 아직 서툴고 느린 순간까지도 있는 그대로 안아주는 친절. 저희가 만드는 모든 앱에 이 마음을 담습니다.",
 
