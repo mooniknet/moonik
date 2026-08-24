@@ -42,6 +42,13 @@
 
       "aboutPage.title": "MoonIK 소개 — 더 나답게, 더 함께",
       "aboutPage.desc": "MoonIK는 사람들이 각자의 속도로 스스로를 돌보고 성장할 수 있도록 돕는 앱을 만듭니다.",
+      "philosophy.eyebrow": "Our Name",
+      "philosophy.title": "왜 MoonIK일까요",
+      "philosophy.intro": "이름 안에 저희가 지키고 싶은 마음을 담았어요.",
+      "philosophy.moon.title": "Moon, 달빛처럼",
+      "philosophy.moon.desc": "달빛은 해처럼 눈부시지 않아요. 대신 어두운 밤에도 길을 잃지 않을 만큼, 딱 필요한 만큼만 조용히 비춰주죠. MoonIK도 다그치지 않고, 각자의 속도를 지켜보며 은은히 곁을 지키는 존재가 되고 싶습니다.",
+      "philosophy.ik.title": "IK, Include Kindness",
+      "philosophy.ik.desc": "IK는 'Include Kindness'에서 왔어요. 잘하고 있을 때만 향하는 친절이 아니라, 아직 서툴고 느린 순간까지도 있는 그대로 안아주는 친절. 저희가 만드는 모든 앱에 이 마음을 담습니다.",
 
       "dallaePage.title": "달래 — 시간을 심으면 정원이 자랍니다 | MoonIK",
       "dallaePage.desc": "달래는 목표를 씨앗으로 심고, 투자한 시간만큼 나만의 정원에 꽃이 피어나는 MoonIK의 성장 앱입니다.",
@@ -123,6 +130,13 @@
 
       "aboutPage.title": "About MoonIK — More like yourself, together",
       "aboutPage.desc": "MoonIK builds apps that help people care for themselves and grow at their own pace.",
+      "philosophy.eyebrow": "Our Name",
+      "philosophy.title": "Why MoonIK",
+      "philosophy.intro": "Our name carries the feeling we want every app to have.",
+      "philosophy.moon.title": "Moon, like moonlight",
+      "philosophy.moon.desc": "Moonlight isn't as bright as the sun. It shines just enough to keep you from losing your way in the dark, gently and without pressure. MoonIK wants to be that kind of presence — watching over your own pace, quietly, without ever pushing.",
+      "philosophy.ik.title": "IK, Include Kindness",
+      "philosophy.ik.desc": "IK stands for Include Kindness — not the kind reserved for when things are going well, but the kind that holds you just as you are, even in your slower, unsure moments. That's the feeling we build into every app we make.",
 
       "dallaePage.title": "Dallae — Plant your time, watch a garden grow | MoonIK",
       "dallaePage.desc": "Dallae is MoonIK's growth app: plant your goals as seeds and watch flowers bloom in your garden as you invest time.",
