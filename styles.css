@@ -31,7 +31,7 @@ nav {
 }
 .logo { font-weight: 800; font-size: 20px; letter-spacing: -0.02em; display: flex; align-items: center; gap: 8px; }
 .logo span { color: var(--accent); }
-.logo img { height: 32px; width: auto; display: block; }
+.logo img { height: 46px; width: auto; display: block; }
 .nav-links { display: flex; gap: 28px; font-size: 14px; color: var(--text-dim); }
 .nav-links a:hover { color: var(--text); }
 .nav-toggle {
