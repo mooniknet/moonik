@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>달래 — 시간을 심으면 정원이 자랍니다 | MoonIK</title>
+<meta name="description" content="달래는 목표를 스킬트리로 그리고, 투자한 시간만큼 나만의 정원에 꽃이 피어나는 MoonIK의 성장 앱입니다." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/dallae-icon.png" />
+<style>
+  .icon-hero {
+    width: 96px; height: 96px; border-radius: 24px;
+    margin: 0 auto 24px; border: 1px solid var(--border);
+  }
+  .flower-strip {
+    display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px;
+  }
+  .flower-chip {
+    padding: 8px 16px; border-radius: 999px;
+    background: var(--bg-soft); border: 1px solid var(--border);
+    font-size: 13px; color: var(--text-dim);
+  }
+  .detail-block {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+    margin-bottom: 64px;
+  }
+  .detail-block:last-child { margin-bottom: 0; }
+  .detail-block.reverse { direction: rtl; }
+  .detail-block.reverse > * { direction: ltr; }
+  .detail-visual {
+    height: 240px; border-radius: 18px;
+    background: var(--bg-soft); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-dim); font-size: 14px;
+  }
+  .detail-body .eyebrow {
+    color: var(--accent); font-weight: 700; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; display: block;
+  }
+  .detail-body h3 { font-size: 22px; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.02em; }
+  .detail-body p { color: var(--text-dim); font-size: 15px; }
+  @media (max-width: 780px) {
+    .detail-block, .detail-block.reverse { grid-template-columns: 1fr; direction: ltr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo">Moon<span>IK</span></a>
+      <div class="nav-links">
+        <a href="index.html#apps">앱 라인업</a>
+        <a href="index.html#about">회사 소개</a>
+        <a href="#features">기능</a>
+      </div>
+      <a href="index.html" class="btn btn-ghost">← MoonIK로 돌아가기</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <img src="assets/dallae-icon-64.png" alt="달래 아이콘" class="icon-hero" />
+      <span class="badge">MoonIK의 첫 번째 앱</span>
+      <h1>시간을 심으면<br /><span class="accent">정원이 자랍니다</span></h1>
+      <p>달래는 이루고 싶은 목표를 스킬트리로 그리고, 거기에 쏟은 시간만큼 나만의 정원에 꽃을 피우는 성장 앱입니다. 혼자여도 외롭지 않게, 친구의 정원에 놀러가 서로의 성장을 응원할 수 있어요.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary btn-lg">App Store (준비 중)</a>
+        <a href="#" class="btn btn-ghost btn-lg">Google Play (준비 중)</a>
+      </div>
+      <div class="flower-strip">
+        <span class="flower-chip">🌸 진달래</span>
+        <span class="flower-chip">🌺 패랭이꽃</span>
+        <span class="flower-chip">🌼 그 외 한국 자생화들</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>달래는 이렇게 작동해요</h2>
+        <p>목표를 심고, 시간을 쏟고, 정원이 자라는 걸 지켜보세요.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>스킬 만들기</h3>
+          <p>이루고 싶은 목표를 스킬로 등록하고, 필요하면 하위 스킬로 세분화해요.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>시간 투자하기</h3>
+          <p>타이머로 실제 투자한 시간을 기록하거나, 지난 시간을 직접 추가해요.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>정원에 꽃 피우기</h3>
+          <p>쌓인 시간만큼 나만의 정원에 한국 자생화가 한 송이씩 피어나요.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>친구와 나누기</h3>
+          <p>친구를 추가하고 서로의 정원에 놀러가 성장 과정을 응원해요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Deep dive</span>
+        <h2>달래를 자세히 살펴보면</h2>
+      </div>
+
+      <div class="detail-block">
+        <div class="detail-visual">스킬트리 화면 자리</div>
+        <div class="detail-body">
+          <span class="eyebrow">스킬트리</span>
+          <h3>끝없이 확장되는 목표 지도</h3>
+          <p>큰 목표 아래 작은 목표를 계속 펼쳐나갈 수 있는 중첩 맵 구조예요. 스킬을 선택해 다음 단계로 들어가면 그 안에 새로운 지도가 열리고, 다시 뒤로 나오면 전체 그림으로 돌아옵니다. 각 스킬에는 사진도 등록할 수 있어서, 목표를 눈으로 보며 관리할 수 있어요.</p>
+        </div>
+      </div>
+
+      <div class="detail-block reverse">
+        <div class="detail-visual">정원 & 꽃 도감 화면 자리</div>
+        <div class="detail-body">
+          <span class="eyebrow">정원과 자생화 도감</span>
+          <h3>노력이 눈에 보이는 방식</h3>
+          <p>스킬에 투자한 시간이 쌓일수록 나만의 정원에 꽃이 한 송이씩 피어납니다. 진달래, 패랭이꽃처럼 실제 한국에서 자라는 꽃들을 하나씩 만나는 재미가 있어요. 숫자로 된 기록이 아니라, 직접 가꾼 정원으로 노력을 확인할 수 있습니다.</p>
+        </div>
+      </div>
+
+      <div class="detail-block">
+        <div class="detail-visual">타임 트래킹 화면 자리</div>
+        <div class="detail-body">
+          <span class="eyebrow">타임 트래킹</span>
+          <h3>시작·정지 한 번으로 기록되는 시간</h3>
+          <p>스킬마다 타이머를 시작하고 멈추기만 하면 투자 시간이 자동으로 쌓여요. 깜빡하고 못 눌렀다면 나중에 시간을 직접 추가할 수도 있습니다. 상위 스킬에는 하위 스킬에 쏟은 시간까지 모두 합산되어 표시돼요.</p>
+        </div>
+      </div>
+
+      <div class="detail-block reverse">
+        <div class="detail-visual">친구 정원 방문 화면 자리</div>
+        <div class="detail-body">
+          <span class="eyebrow">친구와 함께</span>
+          <h3>혼자 하지만, 혼자는 아니게</h3>
+          <p>친구를 추가하면 서로의 정원을 구경할 수 있어요. 각자의 속도로 목표를 향해 가지만, 친구가 얼마나 가꿔왔는지 보면서 서로에게 작은 자극과 응원이 됩니다. 모든 기록은 클라우드에 안전하게 백업돼요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-section">
+    <div class="wrap">
+      <div class="cta">
+        <h2>달래의 첫 번째 정원사가 되어주세요</h2>
+        <p>지금은 개발 중이에요. 출시 소식을 가장 먼저 받아보고 싶다면 알려주세요.</p>
+        <div class="hero-actions">
+          <a href="mailto:hello@moonik.net" class="btn btn-primary btn-lg">출시 소식 받기</a>
+          <a href="index.html" class="btn btn-ghost btn-lg">MoonIK 홈으로</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; width:100%;">
+    <span>© 2026 MoonIK. All rights reserved.</span>
+    <div class="foot-links">
+      <a href="index.html">홈</a>
+      <a href="#">이용약관</a>
+      <a href="mailto:hello@moonik.net">문의하기</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

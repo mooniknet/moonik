@@ -5,180 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>MoonIK — 일상을 더 나답게 만드는 앱</title>
 <meta name="description" content="MoonIK는 일상을 더 나답게 만드는 앱을 만듭니다. 첫 번째 앱 '달래'를 만나보세요." />
-<style>
-  :root {
-    --bg: #0b0b12;
-    --bg-soft: #14141f;
-    --text: #f4f4f8;
-    --text-dim: #a3a3b8;
-    --accent: #7c6cff;
-    --accent-soft: #7c6cff33;
-    --accent2: #38e0d0;
-    --border: #26263a;
-    --radius: 16px;
-    font-family: "Pretendard", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { background: var(--bg); color: var(--text); scroll-behavior: smooth; }
-  body { line-height: 1.6; }
-  a { color: inherit; text-decoration: none; }
-  img { max-width: 100%; display: block; }
-
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
-
-  header {
-    position: sticky; top: 0; z-index: 10;
-    background: rgba(11,11,18,0.85);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
-  }
-  nav {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 18px 0;
-  }
-  .logo { font-weight: 800; font-size: 20px; letter-spacing: -0.02em; }
-  .logo span { color: var(--accent); }
-  .nav-links { display: flex; gap: 28px; font-size: 14px; color: var(--text-dim); }
-  .nav-links a:hover { color: var(--text); }
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 10px 20px; border-radius: 999px;
-    font-size: 14px; font-weight: 600;
-    border: 1px solid transparent;
-    cursor: pointer;
-  }
-  .btn-primary { background: var(--accent); color: #fff; }
-  .btn-primary:hover { opacity: 0.9; }
-  .btn-ghost { border-color: var(--border); color: var(--text); }
-  .btn-ghost:hover { border-color: var(--accent); }
-
-  .hero {
-    padding: 120px 0 90px;
-    text-align: center;
-  }
-  .badge {
-    display: inline-block; margin-bottom: 24px;
-    padding: 6px 14px; border-radius: 999px;
-    background: var(--accent-soft); color: var(--accent);
-    font-size: 13px; font-weight: 600;
-  }
-  .hero h1 {
-    font-size: clamp(30px, 5.5vw, 52px);
-    font-weight: 800; letter-spacing: -0.03em;
-    margin-bottom: 20px;
-  }
-  .hero h1 .accent { color: var(--accent); }
-  .hero p {
-    max-width: 560px; margin: 0 auto 36px;
-    color: var(--text-dim); font-size: 17px;
-  }
-  .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-  .btn-lg { padding: 14px 28px; font-size: 15px; }
-
-  section { padding: 88px 0; }
-  .section-head { text-align: center; max-width: 560px; margin: 0 auto 48px; }
-  .section-head .eyebrow {
-    color: var(--accent); font-weight: 700; font-size: 13px;
-    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; display: block;
-  }
-  .section-head h2 { font-size: clamp(24px, 4vw, 34px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
-  .section-head p { color: var(--text-dim); font-size: 16px; }
-
-  /* Flagship app card */
-  .flagship {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
-    background: var(--bg-soft); border: 1px solid var(--border);
-    border-radius: 24px; padding: 48px;
-  }
-  .flagship-visual {
-    height: 320px; border-radius: 18px;
-    background: radial-gradient(circle at 30% 20%, #7c6cff33, transparent 60%),
-                radial-gradient(circle at 80% 80%, #38e0d033, transparent 60%),
-                #0f0f18;
-    display: flex; align-items: center; justify-content: center;
-    color: var(--text-dim); font-size: 14px; border: 1px solid var(--border);
-  }
-  .app-icon {
-    width: 56px; height: 56px; border-radius: 16px;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 800; font-size: 22px; color: #0b0b12;
-    margin-bottom: 20px;
-  }
-  .flagship-badge {
-    display: inline-block; margin-bottom: 14px;
-    padding: 4px 12px; border-radius: 999px;
-    background: var(--accent-soft); color: var(--accent);
-    font-size: 12px; font-weight: 700;
-  }
-  .flagship-body h3 { font-size: 28px; font-weight: 800; margin-bottom: 6px; letter-spacing: -0.02em; }
-  .flagship-body .tagline { color: var(--accent2); font-weight: 600; font-size: 15px; margin-bottom: 16px; }
-  .flagship-body p.desc { color: var(--text-dim); font-size: 15px; margin-bottom: 24px; }
-
-  .mini-features { display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px; }
-  .mini-feature { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; }
-  .mini-feature .dot {
-    width: 22px; height: 22px; border-radius: 7px; flex-shrink: 0;
-    background: var(--accent-soft); color: var(--accent);
-    display: flex; align-items: center; justify-content: center; font-size: 12px; margin-top: 1px;
-  }
-  .mini-feature strong { display: block; margin-bottom: 2px; }
-  .mini-feature span.sub { color: var(--text-dim); }
-
-  /* Coming soon apps grid */
-  .apps-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
-  }
-  .app-card {
-    background: var(--bg-soft); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 28px;
-    display: flex; flex-direction: column; gap: 6px;
-  }
-  .app-card.soon { opacity: 0.6; border-style: dashed; }
-  .app-card .app-icon-sm {
-    width: 40px; height: 40px; border-radius: 12px;
-    background: var(--accent-soft); color: var(--accent);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 18px; font-weight: 800; margin-bottom: 14px;
-  }
-  .app-card h4 { font-size: 16px; font-weight: 700; }
-  .app-card p { color: var(--text-dim); font-size: 13px; }
-  .soon-tag {
-    display: inline-block; margin-top: 10px;
-    font-size: 11px; font-weight: 700; letter-spacing: 0.04em;
-    color: var(--text-dim); text-transform: uppercase;
-  }
-
-  .about {
-    text-align: center; max-width: 640px; margin: 0 auto;
-  }
-  .about p { color: var(--text-dim); font-size: 16px; }
-
-  .cta {
-    text-align: center;
-    background: linear-gradient(135deg, #7c6cff22, #38e0d022);
-    border: 1px solid var(--border);
-    border-radius: 24px;
-    padding: 72px 24px;
-  }
-  .cta h2 { font-size: clamp(24px, 4vw, 34px); font-weight: 800; margin-bottom: 12px; }
-  .cta p { color: var(--text-dim); margin-bottom: 28px; }
-
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 40px 0; color: var(--text-dim); font-size: 13px;
-    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
-  }
-  footer .foot-links { display: flex; gap: 20px; }
-  footer a:hover { color: var(--text); }
-
-  @media (max-width: 780px) {
-    .nav-links { display: none; }
-    .flagship { grid-template-columns: 1fr; padding: 28px; }
-    .apps-grid { grid-template-columns: 1fr; }
-    .hero { padding: 88px 0 64px; }
-  }
-</style>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/dallae-icon.png" />
 </head>
 <body>
 
@@ -200,7 +28,7 @@
   <section class="hero">
     <div class="wrap">
       <span class="badge">MoonIK · 앱 스튜디오</span>
-      <h1>일상을 더<br /><span class="accent">나답게 만드는 앱</span></h1>
+      <h1>시간을 심으면<br /><span class="accent">정원이 자랍니다</span></h1>
       <p>MoonIK는 사람들의 하루를 조금 더 가볍고 즐겁게 만드는 앱을 만드는 회사입니다. 첫 번째 앱 '달래'를 시작으로, 더 많은 앱을 준비하고 있습니다.</p>
       <div class="hero-actions">
         <a href="#dallae" class="btn btn-primary btn-lg">달래 만나보기</a>
@@ -212,29 +40,31 @@
   <section id="dallae">
     <div class="wrap">
       <div class="flagship">
-        <div class="flagship-visual">달래 앱 스크린샷 / 데모 자리</div>
+        <div class="flagship-visual">
+          <img src="assets/dallae-hero.jpg" alt="달래 앱 아이콘 아트워크" style="width:100%; height:100%; object-fit:cover; border-radius:18px;" />
+        </div>
         <div class="flagship-body">
           <span class="flagship-badge">MoonIK의 첫 번째 앱</span>
           <h3>달래</h3>
-          <p class="tagline">함께 다독이며 나아가는 생산성 커뮤니티</p>
-          <p class="desc">달래는 혼자서는 작심삼일이 되기 쉬운 목표와 루틴을, 서로 응원하고 인증하며 함께 지켜나가는 생산성 소셜 앱입니다.</p>
+          <p class="tagline">시간을 심으면 정원이 자라는 목표 관리 앱</p>
+          <p class="desc">달래는 이루고 싶은 목표를 스킬트리로 그리고, 거기에 쏟은 시간만큼 나만의 정원에 꽃을 피우는 성장 앱입니다. 진달래, 패랭이꽃 같은 한국의 자생화가 내가 투자한 시간을 따라 하나씩 피어나요.</p>
           <div class="mini-features">
             <div class="mini-feature">
               <div class="dot">✓</div>
-              <div><strong>목표 & 루틴 공유</strong><span class="sub">나만의 목표를 만들고 같은 목표를 가진 사람들과 함께해요.</span></div>
+              <div><strong>스킬트리로 그리는 목표</strong><span class="sub">목표와 하위 목표를 무한히 확장되는 맵으로 정리하고 연결해요.</span></div>
             </div>
             <div class="mini-feature">
               <div class="dot">✓</div>
-              <div><strong>서로 다독이는 인증</strong><span class="sub">매일의 작은 실천을 인증하고 서로 응원을 주고받아요.</span></div>
+              <div><strong>시간이 꽃이 되는 정원</strong><span class="sub">타이머로 기록한 시간만큼 나만의 정원에 자생화가 피어나요.</span></div>
             </div>
             <div class="mini-feature">
               <div class="dot">✓</div>
-              <div><strong>가벼운 리마인더</strong><span class="sub">부담스럽지 않은 알림으로 습관을 자연스럽게 이어가요.</span></div>
+              <div><strong>친구의 정원 구경하기</strong><span class="sub">친구를 추가하고 서로의 성장 정원을 방문해 응원할 수 있어요.</span></div>
             </div>
           </div>
           <div class="hero-actions" style="justify-content:flex-start;">
-            <a href="#" class="btn btn-primary">App Store</a>
-            <a href="#" class="btn btn-ghost">Google Play</a>
+            <a href="dallae.html" class="btn btn-primary">달래 자세히 보기</a>
+            <a href="#" class="btn btn-ghost">Google Play (준비 중)</a>
           </div>
         </div>
       </div>
@@ -249,12 +79,14 @@
         <p>달래를 시작으로 다양한 일상 속 앱을 계속 선보일 예정입니다.</p>
       </div>
       <div class="apps-grid">
-        <div class="app-card">
-          <div class="app-icon-sm">달</div>
+        <a href="dallae.html" class="app-card" style="cursor:pointer;">
+          <div class="app-icon-sm" style="background:transparent; padding:0;">
+            <img src="assets/dallae-icon-64.png" alt="달래 아이콘" style="width:40px; height:40px; border-radius:12px;" />
+          </div>
           <h4>달래</h4>
-          <p>함께 다독이며 나아가는 생산성 커뮤니티</p>
-          <span class="soon-tag" style="color:var(--accent2);">Now Available</span>
-        </div>
+          <p>시간을 심으면 정원이 자라는 목표 관리 앱</p>
+          <span class="soon-tag" style="color:var(--accent2);">In Development</span>
+        </a>
         <div class="app-card soon">
           <div class="app-icon-sm">?</div>
           <h4>다음 앱 준비 중</h4>
@@ -282,11 +114,11 @@
   <section id="cta-section">
     <div class="wrap">
       <div class="cta">
-        <h2>지금 달래를 만나보세요</h2>
-        <p>MoonIK의 첫 번째 앱, 달래를 무료로 다운로드할 수 있습니다.</p>
+        <h2>달래, 지금 준비하고 있어요</h2>
+        <p>MoonIK의 첫 번째 앱 달래를 개발하고 있습니다. 출시 소식을 가장 먼저 받아보세요.</p>
         <div class="hero-actions">
-          <a href="#" class="btn btn-primary btn-lg">App Store</a>
-          <a href="#" class="btn btn-ghost btn-lg">Google Play</a>
+          <a href="dallae.html" class="btn btn-primary btn-lg">달래 자세히 보기</a>
+          <a href="mailto:hello@moonik.net" class="btn btn-ghost btn-lg">출시 소식 받기</a>
         </div>
       </div>
     </div>
