@@ -205,6 +205,15 @@ section { padding: 88px 0; }
 .cta h2 { font-size: clamp(24px, 4vw, 34px); font-weight: 400; margin-bottom: 12px; }
 .cta p { color: var(--text-dim); margin-bottom: 28px; }
 
+@keyframes dallae-float {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+}
+.dallae-icon-float { animation: dallae-float 3.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .dallae-icon-float { animation: none; }
+}
+
 footer {
   border-top: 1px solid var(--border);
   padding: 40px 0; color: var(--text-dim); font-size: 13px;
