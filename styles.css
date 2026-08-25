@@ -99,9 +99,9 @@ section { padding: 88px 0; }
 }
 .flagship-visual {
   height: 320px; border-radius: 18px;
-  background: radial-gradient(circle at 30% 20%, #7c6cff33, transparent 60%),
-              radial-gradient(circle at 80% 80%, #38e0d033, transparent 60%),
-              #0f0f18;
+  background: linear-gradient(180deg, rgba(9,12,23,0.2), rgba(9,12,23,0.6)), url("assets/dallae-garden-bg.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex; align-items: center; justify-content: center;
   color: var(--text-dim); font-size: 14px; border: 1px solid var(--border);
   overflow: hidden;
