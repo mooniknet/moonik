@@ -201,6 +201,13 @@
       if (d[key] !== undefined) el.innerHTML = d[key];
     });
 
+    document.querySelectorAll("[data-img-ko][data-img-en]").forEach(function (img) {
+      var src = img.getAttribute(lang === "ko" ? "data-img-ko" : "data-img-en");
+      var alt = img.getAttribute(lang === "ko" ? "data-alt-ko" : "data-alt-en");
+      if (src) img.setAttribute("src", src);
+      if (alt) img.setAttribute("alt", alt);
+    });
+
     var titleEl = document.querySelector("title[data-i18n-title]");
     if (titleEl) {
       var titleKey = titleEl.getAttribute("data-i18n-title");
