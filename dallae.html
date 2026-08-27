@@ -32,22 +32,17 @@
   .detail-block.reverse { direction: rtl; }
   .detail-block.reverse > * { direction: ltr; }
   .detail-visual {
-    min-height: 590px; border-radius: 28px;
+    min-height: 650px; border-radius: 28px;
     background:
       radial-gradient(circle at 50% 22%, rgba(125, 190, 103, 0.18), transparent 42%),
       linear-gradient(160deg, #13231d, #0b1117 72%);
     border: 1px solid rgba(145, 190, 124, 0.24);
     display: flex; align-items: center; justify-content: center;
-    padding: 28px; overflow: hidden; position: relative;
+    padding: 18px; overflow: hidden; position: relative;
     box-shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
   }
-  .detail-visual::before {
-    content: ""; position: absolute; inset: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 22px;
-    pointer-events: none;
-  }
   .detail-screenshot {
-    width: min(100%, 278px); height: auto; max-height: 534px;
+    width: min(100%, 310px); height: auto; max-height: 610px;
     object-fit: contain; border-radius: 25px; position: relative; z-index: 1;
     box-shadow: 0 22px 50px rgba(0, 0, 0, 0.52), 0 0 0 1px rgba(255, 255, 255, 0.1);
   }
@@ -67,8 +62,8 @@
   @media (max-width: 780px) {
     .detail-block, .detail-block.reverse { grid-template-columns: 1fr; direction: ltr; }
     .detail-block { gap: 28px; margin-bottom: 72px; }
-    .detail-visual { min-height: 520px; padding: 22px; }
-    .detail-screenshot { width: min(100%, 248px); max-height: 468px; border-radius: 22px; }
+    .detail-visual { min-height: 590px; padding: 14px; }
+    .detail-screenshot { width: min(100%, 282px); max-height: 558px; border-radius: 22px; }
   }
 </style>
 </head>
