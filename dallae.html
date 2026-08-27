@@ -26,16 +26,37 @@
   }
   .detail-block {
     display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
-    margin-bottom: 64px;
+    margin-bottom: 96px;
   }
   .detail-block:last-child { margin-bottom: 0; }
   .detail-block.reverse { direction: rtl; }
   .detail-block.reverse > * { direction: ltr; }
   .detail-visual {
-    height: 240px; border-radius: 18px;
-    background: var(--bg-soft); border: 1px solid var(--border);
+    min-height: 590px; border-radius: 28px;
+    background:
+      radial-gradient(circle at 50% 22%, rgba(125, 190, 103, 0.18), transparent 42%),
+      linear-gradient(160deg, #13231d, #0b1117 72%);
+    border: 1px solid rgba(145, 190, 124, 0.24);
     display: flex; align-items: center; justify-content: center;
-    color: var(--text-dim); font-size: 14px;
+    padding: 28px; overflow: hidden; position: relative;
+    box-shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+  }
+  .detail-visual::before {
+    content: ""; position: absolute; inset: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 22px;
+    pointer-events: none;
+  }
+  .detail-screenshot {
+    width: min(100%, 278px); height: auto; max-height: 534px;
+    object-fit: contain; border-radius: 25px; position: relative; z-index: 1;
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.52), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+  .screen-caption {
+    position: absolute; left: 24px; bottom: 22px; z-index: 2;
+    padding: 7px 12px; border-radius: 999px;
+    background: rgba(6, 15, 12, 0.82); border: 1px solid rgba(157, 207, 130, 0.28);
+    color: #d9f2cf; font-size: 12px; letter-spacing: 0.03em;
+    backdrop-filter: blur(8px);
   }
   .detail-body .eyebrow {
     color: var(--accent); font-weight: 400; font-size: 13px;
@@ -45,6 +66,9 @@
   .detail-body p { color: var(--text-dim); font-size: 15px; }
   @media (max-width: 780px) {
     .detail-block, .detail-block.reverse { grid-template-columns: 1fr; direction: ltr; }
+    .detail-block { gap: 28px; margin-bottom: 72px; }
+    .detail-visual { min-height: 520px; padding: 22px; }
+    .detail-screenshot { width: min(100%, 248px); max-height: 468px; border-radius: 22px; }
   }
 </style>
 </head>
@@ -103,7 +127,7 @@
         <div class="step">
           <div class="step-num">2</div>
           <h3 data-i18n="step2.title">시간 투자하기</h3>
-          <p data-i18n="step2.desc">타이머로 실제 투자한 시간을 기록하거나, 지난 시간을 직접 추가해요.</p>
+          <p data-i18n="step2.desc">시작과 정지를 눌러 목표에 집중한 시간을 자연스럽게 기록해요.</p>
         </div>
         <div class="step">
           <div class="step-num">3</div>
@@ -127,16 +151,22 @@
       </div>
 
       <div class="detail-block">
-        <div class="detail-visual" data-i18n="detail1.visual">목표 씨앗 화면 자리</div>
+        <figure class="detail-visual">
+          <img class="detail-screenshot" src="assets/screenshots/garden-main.jpg" width="1080" height="2400" loading="lazy" decoding="async" alt="달래 앱의 목표 식물과 계곡 정원 화면" />
+          <figcaption class="screen-caption" data-i18n="detail1.visual">목표 식물과 정원 화면</figcaption>
+        </figure>
         <div class="detail-body">
           <span class="eyebrow" data-i18n="detail1.eyebrow">목표를 씨앗으로</span>
-          <h3 data-i18n="detail1.title">끝없이 확장되는 목표 지도</h3>
-          <p data-i18n="detail1.desc">큰 목표 아래 작은 목표를 씨앗처럼 계속 심어나갈 수 있는 중첩 맵 구조예요. 목표 하나를 선택해 다음 단계로 들어가면 그 안에 새로운 지도가 열리고, 다시 뒤로 나오면 전체 그림으로 돌아옵니다. 목표마다 사진도 등록할 수 있어서, 눈으로 보며 관리할 수 있어요.</p>
+          <h3 data-i18n="detail1.title">심으면, 자리는 정원이 알아서</h3>
+          <p data-i18n="detail1.desc">이루고 싶은 목표를 씨앗으로 심으면 정원 안에 자연스럽게 자리를 잡아요. 한 번에 최대 8개의 목표를 키울 수 있고, 길게 눌러 원하는 자리로 옮기며 나만의 정원을 꾸밀 수 있습니다.</p>
         </div>
       </div>
 
       <div class="detail-block reverse">
-        <div class="detail-visual" data-i18n="detail2.visual">정원 & 꽃 도감 화면 자리</div>
+        <figure class="detail-visual">
+          <img class="detail-screenshot" src="assets/screenshots/flower-book.jpg?v=2" width="1080" height="2400" loading="lazy" decoding="async" alt="달래 앱의 한국 자생 꽃 도감 첫 화면" />
+          <figcaption class="screen-caption" data-i18n="detail2.visual">한국 자생 꽃 도감 화면</figcaption>
+        </figure>
         <div class="detail-body">
           <span class="eyebrow" data-i18n="detail2.eyebrow">정원과 자생화 도감</span>
           <h3 data-i18n="detail2.title">노력이 눈에 보이는 방식</h3>
@@ -145,16 +175,22 @@
       </div>
 
       <div class="detail-block">
-        <div class="detail-visual" data-i18n="detail3.visual">타임 트래킹 화면 자리</div>
+        <figure class="detail-visual">
+          <img class="detail-screenshot" src="assets/screenshots/timer-detail.jpg" width="1080" height="2400" loading="lazy" decoding="async" alt="달래 앱의 목표별 성장 타이머와 활동 기록 화면" />
+          <figcaption class="screen-caption" data-i18n="detail3.visual">성장 타이머와 활동 기록 화면</figcaption>
+        </figure>
         <div class="detail-body">
           <span class="eyebrow" data-i18n="detail3.eyebrow">타임 트래킹</span>
           <h3 data-i18n="detail3.title">시작·정지 한 번으로 기록되는 시간</h3>
-          <p data-i18n="detail3.desc">목표마다 타이머를 시작하고 멈추기만 하면 투자 시간이 자동으로 쌓여요. 깜빡하고 못 눌렀다면 나중에 시간을 직접 추가할 수도 있습니다. 상위 목표에는 하위 목표에 쏟은 시간까지 모두 합산되어 표시돼요.</p>
+          <p data-i18n="detail3.desc">목표마다 시작과 정지를 누르기만 하면 성장 시간이 자동으로 쌓여요. 날짜별 기록은 성장 일지에 정리되고, 타이머가 실행되는 동안에는 알림과 위젯에서도 진행 상황을 확인할 수 있습니다.</p>
         </div>
       </div>
 
       <div class="detail-block reverse">
-        <div class="detail-visual" data-i18n="detail4.visual">친구 정원 방문 화면 자리</div>
+        <figure class="detail-visual">
+          <img class="detail-screenshot" src="assets/screenshots/growth-journal.jpg" width="1080" height="2400" loading="lazy" decoding="async" alt="달래 앱에서 나와 친구의 성장을 함께 보는 성장 기록 화면" />
+          <figcaption class="screen-caption" data-i18n="detail4.visual">친구와 함께 보는 성장 기록</figcaption>
+        </figure>
         <div class="detail-body">
           <span class="eyebrow" data-i18n="detail4.eyebrow">친구와 함께</span>
           <h3 data-i18n="detail4.title">혼자 하지만, 혼자는 아니게</h3>
