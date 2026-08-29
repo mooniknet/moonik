@@ -40,6 +40,10 @@
       "beyond.desc": "BeyondMoment는 살아가며 쌓아온 소중한 기억을 하나의 타임라인으로 엮고, 사람이 직접 확인한 중요한 기록을 블록체인 기술을 이용해 영원히 남기는 서비스를 구상하고 있습니다. 연인과 가족, 그리고 나 자신의 이야기가 시간이 지나도 사라지지 않도록 만듭니다.",
       "beyond.cta1": "소식 받아보기",
       "beyond.cta2": "MoonIK 홈으로",
+      "beyond.detailBtn": "BeyondMoment 자세히 보기",
+      "beyondFeature1": "<strong>평생 쌓이는 타임라인</strong><span class=\"sub\">연인, 가족, 나의 이야기가 하나의 타임라인으로 계속 이어져요.</span>",
+      "beyondFeature2": "<strong>사람이 먼저 확인해요</strong><span class=\"sub\">기록되기 전 사람이 검수해, 정말 의미 있는 기록만 남겨요.</span>",
+      "beyondFeature3": "<strong>블록체인으로 영구 보존</strong><span class=\"sub\">회사가 사라져도 기록은 사라지지 않도록 블록체인 기술로 남겨요.</span>",
 
       "beyondPage.title": "BeyondMoment — 순간들이 모여 하나의 인생이 됩니다 | MoonIK",
       "beyondPage.desc": "BeyondMoment는 평생에 걸쳐 쌓은 소중한 기억을 하나의 타임라인으로 남기는 MoonIK의 두 번째 사업 구상입니다.",
@@ -180,6 +184,10 @@
       "beyond.desc": "BeyondMoment is a concept for weaving the memories you gather over a lifetime into a single timeline, and permanently preserving the ones that matter — reviewed by a person — using blockchain technology. We want the story of a couple, a family, and yourself to last forever, even as time passes.",
       "beyond.cta1": "Get updates",
       "beyond.cta2": "Back to MoonIK",
+      "beyond.detailBtn": "See BeyondMoment in detail",
+      "beyondFeature1": "<strong>A timeline that grows for life</strong><span class=\"sub\">A couple's, a family's, and your own story keep adding to one timeline.</span>",
+      "beyondFeature2": "<strong>A person checks it first</strong><span class=\"sub\">Every record is reviewed by a person before it's kept, so only what matters remains.</span>",
+      "beyondFeature3": "<strong>Permanently preserved on-chain</strong><span class=\"sub\">Blockchain technology keeps your records safe, even if the company disappears.</span>",
 
       "beyondPage.title": "BeyondMoment — Moments add up and become a life | MoonIK",
       "beyondPage.desc": "BeyondMoment is MoonIK's second venture concept: a lifelong timeline of memories, preserved permanently.",
