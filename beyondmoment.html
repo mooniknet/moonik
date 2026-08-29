@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title data-i18n-title="beyondPage.title">BeyondMoment — 순간들이 모여 하나의 인생이 됩니다 | MoonIK</title>
+<meta name="description" content="BeyondMoment는 평생에 걸쳐 쌓은 소중한 기억을 하나의 타임라인으로 남기는 MoonIK의 두 번째 사업 구상입니다." data-i18n-content="beyondPage.desc" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
+<script src="i18n.js" defer></script>
+<style>
+  .icon-hero {
+    width: 96px; height: 96px; border-radius: 24px;
+    margin: 0 auto 24px; border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 40px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+  }
+  .icon-sm-symbol {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    margin-bottom: 14px;
+  }
+  .timeline-list {
+    max-width: 640px; margin: 0 auto;
+    background: var(--bg-soft); border: 1px solid var(--border);
+    border-radius: 18px; padding: 4px 28px;
+  }
+  .timeline-row {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 16px 0; border-bottom: 1px solid var(--border);
+    font-size: 15px;
+  }
+  .timeline-row:last-child { border-bottom: none; }
+  .timeline-row .dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+    flex-shrink: 0; margin-top: 7px;
+  }
+  .timeline-row.final { color: var(--text-dim); font-style: italic; }
+  .timeline-row.final .dot { background: var(--accent2); }
+  .timeline-row .note {
+    display: block; font-size: 12px; color: var(--text-dim);
+    margin-top: 4px; font-style: normal;
+  }
+  .detail-block {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+    margin-bottom: 64px;
+  }
+  .detail-block:last-child { margin-bottom: 0; }
+  .detail-block.reverse { direction: rtl; }
+  .detail-block.reverse > * { direction: ltr; }
+  .detail-visual {
+    height: 240px; border-radius: 18px;
+    background: var(--bg-soft); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-dim); font-size: 14px;
+  }
+  .detail-body .eyebrow {
+    color: var(--accent); font-weight: 400; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; display: block;
+  }
+  .detail-body h3 { font-size: 22px; font-weight: 400; margin-bottom: 12px; letter-spacing: -0.02em; }
+  .detail-body p { color: var(--text-dim); font-size: 15px; }
+  @media (max-width: 780px) {
+    .detail-block, .detail-block.reverse { grid-template-columns: 1fr; direction: ltr; }
+    .timeline-list { padding: 4px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo"><img src="assets/moonik-logo-nav.png" alt="MoonIK" /></a>
+      <div class="nav-links">
+        <a href="index.html#apps" data-i18n="nav.apps">앱 라인업</a>
+        <a href="about.html" data-i18n="nav.about">회사 소개</a>
+        <a href="#concept" data-i18n="nav.concept">구상</a>
+      </div>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="btn btn-ghost" onclick="moonikLang.toggle()">EN</button>
+        <a href="index.html" class="btn btn-ghost nav-back" data-i18n="nav.back">← MoonIK로 돌아가기</a>
+        <button class="nav-toggle" onclick="moonikNav.toggle()" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="icon-hero">✨</div>
+      <span class="badge" data-i18n="beyond.badge">MoonIK의 두 번째 사업 · 구상 중</span>
+      <h1 data-i18n="beyond.headline">순간들이 모여,<br /><span class="accent">하나의 인생이 됩니다</span></h1>
+      <p data-i18n="beyond.desc">BeyondMoment는 살아가며 쌓아온 소중한 기억을 하나의 타임라인으로 엮고, 사람이 직접 확인한 중요한 기록을 지워지지 않는 방식으로 남기는 서비스를 구상하고 있습니다. 연인과 가족, 그리고 나 자신의 이야기가 시간이 지나도 사라지지 않도록 만듭니다.</p>
+      <div class="hero-actions">
+        <a href="mailto:hello@moonik.net" class="btn btn-primary btn-lg" data-i18n="beyond.cta1">소식 받아보기</a>
+        <a href="index.html" class="btn btn-ghost btn-lg" data-i18n="beyond.cta2">MoonIK 홈으로</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="beyondTimeline.eyebrow">A Life, Timelined</span>
+        <h2 data-i18n="beyondTimeline.title">이렇게 쌓입니다</h2>
+        <p data-i18n="beyondTimeline.desc">한 사람, 혹은 두 사람의 이야기가 평생에 걸쳐 이렇게 이어질 수 있어요.</p>
+      </div>
+      <div class="timeline-list">
+        <div class="timeline-row"><span class="dot"></span><span data-i18n="beyondTimeline.item1">2026 — 우리가 처음 만난 날 ❤️</span></div>
+        <div class="timeline-row"><span class="dot"></span><span data-i18n="beyondTimeline.item2">2029 — 결혼 💍</span></div>
+        <div class="timeline-row"><span class="dot"></span><span data-i18n="beyondTimeline.item3">2032 — 첫 아이가 태어난 날 👶</span></div>
+        <div class="timeline-row"><span class="dot"></span><span data-i18n="beyondTimeline.item4">2076 — 함께한 지 50년 🎉</span></div>
+        <div class="timeline-row final">
+          <span class="dot"></span>
+          <span>
+            <span data-i18n="beyondTimeline.item5">2085 — We remember you.</span>
+            <span class="note" data-i18n="beyondTimeline.item5note">가족이 이어서 남긴 마지막 기록</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it might work</span>
+        <h2 data-i18n="beyondHow.title">BeyondMoment는 이렇게 구상하고 있어요</h2>
+        <p data-i18n="beyondHow.desc">기억을 기록하고, 사람이 확인하고, 지워지지 않게 남기고, 평생 이어갑니다.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3 data-i18n="beyondStep1.title">기억을 기록해요</h3>
+          <p data-i18n="beyondStep1.desc">소중한 순간을 글과 사진으로 남겨요.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3 data-i18n="beyondStep2.title">사람이 확인해요</h3>
+          <p data-i18n="beyondStep2.desc">등록 전, 사람이 직접 검수해 의미 있는 기록만 남깁니다.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3 data-i18n="beyondStep3.title">지워지지 않게 보존해요</h3>
+          <p data-i18n="beyondStep3.desc">검수된 기록은 블록체인 기술로 영구 보존을 고려하고 있어요.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3 data-i18n="beyondStep4.title">평생 이어가요</h3>
+          <p data-i18n="beyondStep4.desc">시간이 흐르며 타임라인에 새로운 순간이 계속 더해져요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="concept">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Deep dive</span>
+        <h2 data-i18n="beyondDeep.title">BeyondMoment를 자세히 살펴보면</h2>
+      </div>
+
+      <div class="detail-block">
+        <div class="detail-visual" data-i18n="beyondDetail1.visual">타임라인 예시 화면</div>
+        <div class="detail-body">
+          <span class="eyebrow" data-i18n="beyondDetail1.eyebrow">우리가 만드는 것</span>
+          <h3 data-i18n="beyondDetail1.title">추모 서비스가 아니라, 삶의 기록</h3>
+          <p data-i18n="beyondDetail1.desc">BeyondMoment는 세상을 떠난 사람을 기리는 서비스가 아니라, 살아있는 동안 쌓이는 기억부터 시작합니다. 연인이 처음 만난 날, 가족이 함께한 순간처럼 지금 이 순간의 기록이 평생에 걸친 하나의 타임라인이 됩니다.</p>
+        </div>
+      </div>
+
+      <div class="detail-block reverse">
+        <div class="detail-visual" data-i18n="beyondDetail2.visual">기록 검수 화면</div>
+        <div class="detail-body">
+          <span class="eyebrow" data-i18n="beyondDetail2.eyebrow">사람의 검수</span>
+          <h3 data-i18n="beyondDetail2.title">기록되기 전, 사람이 먼저 확인합니다</h3>
+          <p data-i18n="beyondDetail2.desc">아무 기록이나 영구히 남기지 않아요. 등록하고 싶은 기억은 사람이 먼저 확인하고, 정말 의미 있는 기록만 지워지지 않는 방식으로 남깁니다.</p>
+        </div>
+      </div>
+
+      <div class="detail-block">
+        <div class="detail-visual" data-i18n="beyondDetail3.visual">영구 보존 구조</div>
+        <div class="detail-body">
+          <span class="eyebrow" data-i18n="beyondDetail3.eyebrow">영속성</span>
+          <h3 data-i18n="beyondDetail3.title">회사가 사라져도, 기록은 남습니다</h3>
+          <p data-i18n="beyondDetail3.desc">BeyondMoment가 서비스를 그만두더라도 여러분의 기록은 사라지지 않아요. 이더리움 같은 블록체인 기술을 활용해, 특정 회사나 서버에 의존하지 않고 오래 남는 방식을 고민하고 있습니다.</p>
+        </div>
+      </div>
+
+      <div class="detail-block reverse">
+        <div class="detail-visual" data-i18n="beyondDetail4.visual">가족과 함께 잇는 타임라인</div>
+        <div class="detail-body">
+          <span class="eyebrow" data-i18n="beyondDetail4.eyebrow">연인, 가족, 그리고 나</span>
+          <h3 data-i18n="beyondDetail4.title">혼자의 기록에서, 함께의 기록으로</h3>
+          <p data-i18n="beyondDetail4.desc">커플의 기념일, 가족의 성장 과정, 그리고 나만의 이야기까지 — 타임라인은 한 사람에서 시작해 가족 전체로, 세대를 넘어 이어질 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-section">
+    <div class="wrap">
+      <div class="cta">
+        <h2 data-i18n="beyondCta.title">BeyondMoment는 아직 구상 단계예요</h2>
+        <p data-i18n="beyondCta.desc">MoonIK가 준비하고 있는 두 번째 사업입니다. 더 자세한 소식을 가장 먼저 받아보고 싶다면 알려주세요.</p>
+        <div class="hero-actions">
+          <a href="mailto:hello@moonik.net" class="btn btn-primary btn-lg" data-i18n="cta.btn2">출시 소식 받기</a>
+          <a href="index.html" class="btn btn-ghost btn-lg" data-i18n="cta2.btn2">MoonIK 홈으로</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; width:100%;">
+    <span>© 2026 MoonIK. All rights reserved.</span>
+    <div class="foot-links">
+      <a href="index.html" data-i18n="footer.home">홈</a>
+      <a href="#" data-i18n="footer.terms">이용약관</a>
+      <a href="mailto:hello@moonik.net" data-i18n="footer.contact">문의하기</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
