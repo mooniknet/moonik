@@ -261,6 +261,7 @@ footer a:hover { color: var(--text); }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 12px 0; border-top: 1px solid var(--border); }
   .flagship { grid-template-columns: 1fr; padding: 28px; }
+  #beyondmoment .flagship-visual { order: -1; }
   .apps-grid { grid-template-columns: 1fr; }
   .features { grid-template-columns: 1fr; }
   .steps { grid-template-columns: repeat(2, 1fr); }
