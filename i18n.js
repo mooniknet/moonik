@@ -33,7 +33,7 @@
       "appcard2.desc": "MoonIK의 다음 앱을 준비하고 있습니다.",
       "appcard3.desc": "더 많은 이야기로 곧 찾아뵐게요.",
 
-      "beyond.badge": "MoonIK의 두 번째 사업 · 구상 중",
+      "beyond.badge": "MoonIK의 두 번째 앱 · 구상 중",
       "beyond.status": "구상 중",
       "beyond.name": "BeyondMoment",
       "beyond.tagline": "소중한 순간들을 타임라인으로 남기는 서비스",
@@ -178,7 +178,7 @@
       "appcard2.desc": "We're working on MoonIK's next app.",
       "appcard3.desc": "More stories are on the way.",
 
-      "beyond.badge": "MoonIK's second venture · In concept",
+      "beyond.badge": "MoonIK's second app · In concept",
       "beyond.status": "In Concept",
       "beyond.name": "BeyondMoment",
       "beyond.tagline": "A service that keeps meaningful moments as a timeline",
