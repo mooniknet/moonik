@@ -292,9 +292,9 @@
         i = bestIndex;
       }
       if (i === -1) return;
-      var href = cards[i].getAttribute('data-href');
-      if (href) {
-        window.location.href = href;
+      if (i === selected) {
+        var href = cards[i].getAttribute('data-href');
+        if (href) window.location.href = href;
       } else {
         goTo(i);
       }
