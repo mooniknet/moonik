@@ -273,21 +273,28 @@
     var suppressNextClick = false;
     // Delegated on the frame, not per-card: a tilted side card's real
     // painted shape is a foreshortened quad, not its axis-aligned bounding
-    // box, so a click near its edge can land just outside any card element.
-    // Falling back to "which side of centre was clicked" keeps those clicks
-    // useful instead of silently doing nothing.
+    // box, so a click/tap near its edge can land just outside any card
+    // element (common on the smaller mobile layout). When that happens,
+    // fall back to whichever card's actual rendered centre is nearest the
+    // tap, instead of a generic "nudge one step" that can require several
+    // taps to actually land on the card.
     frame.addEventListener('click', function (e) {
       if (suppressNextClick) { suppressNextClick = false; return; }
       var cardEl = e.target.closest && e.target.closest('.cf-card');
       var i = cardEl ? cards.indexOf(cardEl) : -1;
       if (i === -1) {
-        var frameBox = frame.getBoundingClientRect();
-        nudge(e.clientX < frameBox.left + frameBox.width / 2 ? -1 : 1);
-        return;
+        var bestIndex = -1, bestDist = Infinity;
+        cards.forEach(function (c, idx) {
+          var r = c.getBoundingClientRect();
+          var d = Math.abs(e.clientX - (r.left + r.width / 2));
+          if (d < bestDist) { bestDist = d; bestIndex = idx; }
+        });
+        i = bestIndex;
       }
-      if (i === selected) {
-        var href = cards[i].getAttribute('data-href');
-        if (href) window.location.href = href;
+      if (i === -1) return;
+      var href = cards[i].getAttribute('data-href');
+      if (href) {
+        window.location.href = href;
       } else {
         goTo(i);
       }
