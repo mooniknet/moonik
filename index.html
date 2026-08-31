@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=6" />
+<link rel="stylesheet" href="styles.css?v=7" />
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
 <script src="i18n.js?v=6" defer></script>
 </head>
@@ -33,6 +33,8 @@
 
 <main>
   <section id="apps">
+    <div class="cf-bg cf-bg-dallae active" id="cfBgDallae"></div>
+    <div class="cf-bg cf-bg-beyond" id="cfBgBeyond"></div>
     <div class="wrap">
       <div class="section-head">
         <h2 data-i18n="apps.title">MoonIK의 앱 라인업</h2>
@@ -44,8 +46,8 @@
             <div class="cf-card" data-index="0" data-href="dallae.html">
               <img src="assets/dallae-icon.png" alt="달래" draggable="false" />
             </div>
-            <div class="cf-card cf-card-beyond" data-index="1" data-href="beyondmoment.html">
-              <span class="cf-emoji">✨</span>
+            <div class="cf-card" data-index="1" data-href="beyondmoment.html">
+              <img src="assets/beyondmoment-icon.png" alt="BeyondMoment" draggable="false" />
             </div>
             <div class="cf-card cf-card-soon" data-index="2">
               <span class="cf-q">?</span>
@@ -143,7 +145,7 @@
           </div>
         </div>
         <div class="flagship-visual" style="background: linear-gradient(160deg, rgba(251,186,79,0.12), rgba(124,147,214,0.08)), var(--bg-soft); flex-direction: column; gap: 18px; padding: 28px;">
-          <div style="width:72px; height:72px; border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:32px; background:linear-gradient(135deg, var(--accent), var(--accent2)); flex-shrink:0;">✨</div>
+          <img src="assets/beyondmoment-icon.png" alt="BeyondMoment" style="width:72px; height:72px; border-radius:20px; flex-shrink:0; object-fit:cover;" />
           <div class="timeline-list" style="width:100%; max-width:280px; background:var(--bg); padding:2px 20px;">
             <div class="timeline-row" style="font-size:13px; padding:12px 0;"><span class="dot"></span><span data-i18n="beyondTimeline.item1">2026 — 우리가 처음 만난 날 ❤️</span></div>
             <div class="timeline-row" style="font-size:13px; padding:12px 0;"><span class="dot"></span><span data-i18n="beyondTimeline.item2">2029 — 결혼 💍</span></div>
@@ -209,6 +211,7 @@
       if (prevBtn) prevBtn.disabled = selected === 0;
       if (nextBtn) nextBtn.disabled = selected === count - 1;
       showPanel(selected);
+      showBg(selected);
     }
 
     var appPanels = { 0: document.getElementById('dallae'), 1: document.getElementById('beyondmoment') };
@@ -218,6 +221,14 @@
       Object.keys(appPanels).forEach(function (key) {
         var el = appPanels[key];
         if (el) el.classList.toggle('cf-visible', Number(key) === index);
+      });
+    }
+
+    var bgLayers = { 0: document.getElementById('cfBgDallae'), 1: document.getElementById('cfBgBeyond') };
+    function showBg(index) {
+      Object.keys(bgLayers).forEach(function (key) {
+        var el = bgLayers[key];
+        if (el) el.classList.toggle('active', Number(key) === index);
       });
     }
 
