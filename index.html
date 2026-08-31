@@ -335,11 +335,22 @@
       if (!drag || drag.id !== e.pointerId) return;
       var v = drag.v;
       var wasMoved = drag.moved;
+      var startPos = drag.startPos;
       drag = null;
       if (wasMoved) {
-        suppressNextClick = true;
         var carried = Math.max(-1, Math.min(1, v * 0.15));
-        settle(Math.round(pos + carried));
+        var targetPos = pos + carried;
+        // A real tap on a touchscreen almost always carries a few px of
+        // jitter, which is enough to cross the 8px threshold above and
+        // mark this as "moved" -- but it shouldn't cross into a
+        // different card. Only suppress the trailing click if the drag
+        // actually changed which card would end up centered; otherwise
+        // a normal tap on an already-centered card would silently do
+        // nothing on mobile.
+        if (Math.round(targetPos) !== Math.round(startPos)) {
+          suppressNextClick = true;
+        }
+        settle(Math.round(targetPos));
       }
     }
     frame.addEventListener('pointerup', endDrag);
