@@ -498,13 +498,18 @@
             big: Math.random() > 0.82
           });
         }
+        var isNarrow = f.w < 780;
+        var radius = isNarrow ? Math.min(70, f.w * 0.22) : Math.max(120, f.w * 0.11);
         links = [];
         for (var a = 0; a < nodes.length; a++) {
           for (var b = a + 1; b < nodes.length; b++) {
             var dx = nodes[a].bx - nodes[b].bx;
             var dy = nodes[a].by - nodes[b].by;
-            if (Math.sqrt(dx * dx + dy * dy) < Math.max(120, f.w * 0.11)) links.push([a, b]);
+            if (Math.sqrt(dx * dx + dy * dy) < radius) links.push([a, b]);
           }
+        }
+        if (isNarrow) {
+          links = links.filter(function (_, i) { return i % 2 === 0; });
         }
       }
 
