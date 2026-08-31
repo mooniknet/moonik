@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=16" />
+<link rel="stylesheet" href="styles.css?v=17" />
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
 <script src="i18n.js?v=6" defer></script>
 </head>
@@ -61,12 +61,12 @@
         <div class="cf-caption active" data-index="0">
           <h4 data-i18n="dallae.name">달래</h4>
           <p data-i18n="dallae.tagline">시간을 심으면 정원이 자라는 목표 관리 앱</p>
-          <span class="soon-tag" style="color:var(--accent2);" data-i18n="dallae.devStatus">개발 중</span>
+          <span class="soon-tag" data-i18n="dallae.devStatus">개발 중</span>
         </div>
         <div class="cf-caption" data-index="1">
           <h4 data-i18n="beyond.name">BeyondMoment</h4>
           <p data-i18n="beyond.tagline">소중한 순간들을 타임라인으로 남기는 서비스</p>
-          <span class="soon-tag" style="color:var(--accent2);" data-i18n="beyond.status">구상 중</span>
+          <span class="soon-tag" data-i18n="beyond.status">구상 중</span>
         </div>
         <div class="cf-caption" data-index="2">
           <h4 data-i18n="appcard2.title">다음 앱 준비 중</h4>
@@ -216,6 +216,7 @@
       if (nextBtn) nextBtn.disabled = selected === count - 1;
       showPanel(selected);
       showBg(selected);
+      if (moreBtn) moreBtn.classList.toggle('cf-more-hidden', !appPanels[selected]);
     }
 
     var appPanels = { 0: document.getElementById('dallae'), 1: document.getElementById('beyondmoment') };
