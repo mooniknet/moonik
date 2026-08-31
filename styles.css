@@ -197,7 +197,10 @@ section { padding: 88px 0; }
 .cf-arrow:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 .cf-arrow:disabled { opacity: 0.3; cursor: default; }
 .cf-captions {
-  position: relative; max-width: 460px; margin: 4px auto 0; text-align: center; min-height: 160px;
+  position: relative; max-width: 460px; margin: 4px auto 0; text-align: center; min-height: 118px;
+}
+html[lang="en"] .cf-captions {
+  min-height: 160px;
 }
 .cf-caption {
   position: absolute; inset: 0;
@@ -380,5 +383,5 @@ footer a:hover { color: var(--text); }
   .features { grid-template-columns: 1fr; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .hero { padding: 88px 0 64px; }
-  .cf-captions { min-height: 190px; }
+  html[lang="en"] .cf-captions { min-height: 190px; }
 }
