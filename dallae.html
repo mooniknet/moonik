@@ -349,17 +349,6 @@
       touchStartX = null;
     }, { passive: true });
 
-    book.addEventListener('wheel', function (e) {
-      var goingDown = e.deltaY > 0;
-      var canAdvance = goingDown && current < total - 1;
-      var canGoBack = !goingDown && current > 0;
-      if (!canAdvance && !canGoBack) return; // at the book's edge: let the page scroll normally
-
-      e.preventDefault();
-      if (animating) return; // mid-flip already; goTo()'s own guard covers the rest
-      goTo(goingDown ? current + 1 : current - 1);
-    }, { passive: false });
-
     render();
   })();
 </script>
