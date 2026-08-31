@@ -16,8 +16,9 @@
   .bm-serif { font-family: "Cormorant Garamond", serif; }
   .bm-mono { font-family: "IBM Plex Mono", monospace; }
   .bm main { overflow-x: clip; }
-  .bm header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(5,7,15,0.32); border-bottom: 1px solid rgba(160,176,235,0.08); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+  .bm header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(5,7,15,0.32); border-bottom: 1px solid rgba(160,176,235,0.08); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-family: "Jua", "Pretendard", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
   .bm .logo, .bm .nav-links a, .bm #lang-toggle, .bm .nav-back { color: #dfe4fb; }
+  .bm-icon-hero { width: 96px; height: 96px; border-radius: 24px; margin: 0 auto 4px; border: 1px solid rgba(206,216,255,0.24); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
   .bm .nav-links a:hover { color: #ffd9a0; }
   .bm .btn-ghost.nav-back, .bm #lang-toggle { border-color: rgba(206,216,255,0.22); }
 
@@ -123,6 +124,7 @@
     <canvas class="bm-star-canvas" data-density="1" data-shooting="1"></canvas>
     <div class="bm-fade"></div>
     <div class="bm-hero-inner">
+      <img src="assets/beyondmoment-icon.png?v=2" alt="BeyondMoment 아이콘" class="bm-icon-hero dallae-icon-float" />
       <h1 class="bm-serif">Beyond<span>Moment</span></h1>
       <p class="bm-tagline bm-serif">Every moment, beyond time.</p>
       <p class="bm-desc" data-i18n="bmPage.heroDesc">당신의 소중한 순간을 이더리움 블록체인에 영구히 기록하고,<br />시간의 흐름 속에서 하나의 별자리로 아름답게 이어 보여줍니다.</p>
