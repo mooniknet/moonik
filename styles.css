@@ -246,7 +246,7 @@ section { padding: 88px 0; }
 }
 .cf-bg.active { opacity: 1; }
 .cf-bg-dallae { background-image: url("assets/dallae-hero-bg.jpg"); }
-.cf-bg-beyond { background-image: url("assets/beyondmoment-bg.jpg"); }
+.cf-bg-beyond { background-image: url("assets/beyondmoment-bg.jpg?v=2"); }
 
 #dallae.cf-fade, #beyondmoment.cf-fade {
   box-sizing: border-box;
