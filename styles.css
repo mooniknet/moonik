@@ -217,8 +217,8 @@ section { padding: 88px 0; }
   margin: 26px auto 0; padding: 8px; background: none; border: none; cursor: pointer;
 }
 .cf-more span {
-  width: 10px; height: 10px; margin-top: -4px;
-  border-right: 2px solid var(--text-dim); border-bottom: 2px solid var(--text-dim);
+  width: 18px; height: 18px; margin-top: -8px;
+  border-right: 3px solid var(--text-dim); border-bottom: 3px solid var(--text-dim);
   transform: rotate(45deg);
   opacity: 0.3;
   animation: cf-more-bounce 1.6s ease-in-out infinite;
