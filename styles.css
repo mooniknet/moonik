@@ -243,7 +243,7 @@ section { padding: 88px 0; }
 }
 .cf-bg::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(9,12,23,0.72) 0%, rgba(9,12,23,0.5) 45%, rgba(9,12,23,0.85) 100%);
+  background: linear-gradient(180deg, rgba(9,12,23,0.46) 0%, rgba(9,12,23,0.24) 45%, rgba(9,12,23,0.6) 100%);
 }
 .cf-bg.active { opacity: 1; }
 .cf-bg-dallae { background-image: url("assets/dallae-hero-bg.jpg"); }
