@@ -46,8 +46,66 @@
       "beyondFeature2": "<strong>사람이 먼저 확인해요</strong><span class=\"sub\">기록되기 전 사람이 검수해, 정말 의미 있는 기록만 남겨요.</span>",
       "beyondFeature3": "<strong>블록체인으로 영구 보존</strong><span class=\"sub\">회사가 사라져도 기록은 사라지지 않도록 블록체인 기술로 남겨요.</span>",
 
-      "beyondPage.title": "BeyondMoment — 순간들이 모여 하나의 인생이 됩니다 | MoonIK",
-      "beyondPage.desc": "BeyondMoment는 평생에 걸쳐 쌓은 소중한 기억을 하나의 타임라인으로 남기는 MoonIK의 두 번째 사업 구상입니다.",
+      "beyondPage.title": "BeyondMoment — Every moment, beyond time. | MoonIK",
+      "beyondPage.desc": "BeyondMoment는 당신의 소중한 순간을 이더리움 블록체인에 영구히 기록하고, 하나의 별자리로 이어 보여주는 MoonIK의 두 번째 앱 구상입니다.",
+
+      "bmPage.heroDesc": "당신의 소중한 순간을 이더리움 블록체인에 영구히 기록하고,<br />시간의 흐름 속에서 하나의 별자리로 아름답게 이어 보여줍니다.",
+      "bmPage.cta1": "내 별자리 만들기",
+      "bmPage.cta2": "앱 미리보기",
+
+      "bmPage.s1Title": "사라지지 않는 세 가지 약속",
+      "bmPage.s1Desc": "기록은 남기는 순간부터 당신의 것이 아니라, 시간의 것이 됩니다.",
+      "bmPage.card1Title": "영원히 기록되는 순간",
+      "bmPage.card1Desc": "이더리움 블록체인에 새겨진 기록은 누구도 변경하거나 지울 수 없습니다. 서비스가 사라져도 당신의 순간은 남습니다.",
+      "bmPage.card2Title": "시간을 잇는 여정",
+      "bmPage.card2Desc": "블록 번호와 타임스탬프로, 흩어져 있던 순간들이 하나의 선으로 자연스럽게 연결됩니다.",
+      "bmPage.card3Title": "당신만의 별자리",
+      "bmPage.card3Desc": "기록이 쌓일수록 별은 늘어나고, 세상에 단 하나뿐인 당신의 별자리가 완성됩니다.",
+
+      "bmPage.s2Title": "밤하늘을 넘기는 방식으로",
+      "bmPage.s2Desc": "전체 여정을 한눈에, 하나의 순간을 깊이. 별을 탭하면 그날의 기록이 열립니다.",
+      "bmPage.phone1Caption": "전체 여정",
+      "bmPage.phone1Sub": "당신의 모든 순간이 별자리로 이어집니다.",
+      "bmPage.phone2Caption": "순간 상세 보기",
+      "bmPage.phone2Sub": "하나의 별을 탭하면 그 순간이 열립니다.",
+      "bmPage.phone3Caption": "월별 · 검색",
+      "bmPage.phone3Sub": "시간의 흐름을 달력처럼 훑어볼 수 있어요.",
+      "bmPage.mockConstellation": "My Constellation",
+      "bmPage.mockEntry1": "Our story begins.",
+      "bmPage.mockEntry2": "Luna came<br />into our lives.",
+      "bmPage.mockEntry3": "Our first trip.",
+      "bmPage.mockMoment": "Moment",
+      "bmPage.mockNavJourney": "Journey",
+      "bmPage.mockNavMoments": "Moments",
+      "bmPage.mockNavSearch": "Search",
+      "bmPage.mockNavProfile": "Profile",
+      "bmPage.mockMarried": "We got<br />married.",
+      "bmPage.mockBlockLabel": "Ethereum Block",
+      "bmPage.mockTimestampLabel": "Timestamp",
+      "bmPage.mockTxLabel": "Transaction",
+      "bmPage.mockAuthorLabel": "Author",
+      "bmPage.mockCal1": "We got married.",
+      "bmPage.mockCal2": "Thank you for being with me.",
+      "bmPage.mockCal3": "A peaceful morning.",
+
+      "bmPage.s3Title": "네 걸음이면 영원해집니다",
+      "bmPage.step1Title": "작성하기",
+      "bmPage.step1Desc": "오늘의 순간을 200자 안에 담아 짧은 글로 남깁니다.",
+      "bmPage.step2Title": "검토하기",
+      "bmPage.step2Desc": "한 번 기록되면 수정할 수 없으니, 마지막으로 확인합니다.",
+      "bmPage.step3Title": "기록하기",
+      "bmPage.step3Desc": "블록체인에 새겨집니다. 평균 12초, 그리고 영원.",
+      "bmPage.step4Title": "완료",
+      "bmPage.step4Desc": "새로운 별 하나가 당신의 별자리에 추가되었습니다.",
+
+      "bmPage.s4Title": "무한히 이어지는 별자리",
+      "bmPage.s4Desc": "기록이 계속될수록 당신의 별자리는 더 넓어지고 더 밝게 빛납니다.",
+
+      "bmPage.inviteTitle": "오늘의 순간을<br />첫 번째 별로.",
+      "bmPage.inviteDesc": "사전 등록하시면 정식 출시 시 가장 먼저 초대해 드립니다.",
+      "bmPage.emailPlaceholder": "이메일 주소",
+      "bmPage.registerBtn": "사전 등록",
+      "bmPage.noSpam": "스팸은 보내지 않습니다.",
 
       "beyondTimeline.eyebrow": "A Life, Timelined",
       "beyondTimeline.title": "이렇게 쌓입니다",
@@ -191,8 +249,66 @@
       "beyondFeature2": "<strong>A person checks it first</strong><span class=\"sub\">Every record is reviewed by a person before it's kept, so only what matters remains.</span>",
       "beyondFeature3": "<strong>Permanently preserved on-chain</strong><span class=\"sub\">Blockchain technology keeps your records safe, even if the company disappears.</span>",
 
-      "beyondPage.title": "BeyondMoment — Moments add up and become a life | MoonIK",
-      "beyondPage.desc": "BeyondMoment is MoonIK's second venture concept: a lifelong timeline of memories, preserved permanently.",
+      "beyondPage.title": "BeyondMoment — Every moment, beyond time. | MoonIK",
+      "beyondPage.desc": "BeyondMoment permanently records your precious moments on the Ethereum blockchain and connects them into one constellation over time. MoonIK's second app concept.",
+
+      "bmPage.heroDesc": "We permanently record your precious moments on the Ethereum blockchain,<br />and beautifully connect them into a constellation across time.",
+      "bmPage.cta1": "Create my constellation",
+      "bmPage.cta2": "Preview the app",
+
+      "bmPage.s1Title": "Three promises that never fade",
+      "bmPage.s1Desc": "The moment you record it, it belongs not to you, but to time itself.",
+      "bmPage.card1Title": "Moments recorded forever",
+      "bmPage.card1Desc": "Nothing carved into the Ethereum blockchain can be changed or erased by anyone. Even if the service disappears, your moments remain.",
+      "bmPage.card2Title": "A journey through time",
+      "bmPage.card2Desc": "Block numbers and timestamps naturally connect your scattered moments into a single line.",
+      "bmPage.card3Title": "A constellation of your own",
+      "bmPage.card3Desc": "The more you record, the more stars appear — completing a constellation that belongs only to you.",
+
+      "bmPage.s2Title": "Swipe through the night sky",
+      "bmPage.s2Desc": "See the whole journey at a glance, or go deep into a single moment. Tap a star to open that day's record.",
+      "bmPage.phone1Caption": "The whole journey",
+      "bmPage.phone1Sub": "Every moment of yours connects into a constellation.",
+      "bmPage.phone2Caption": "See a moment in detail",
+      "bmPage.phone2Sub": "Tap a single star and that moment opens up.",
+      "bmPage.phone3Caption": "Monthly view · Search",
+      "bmPage.phone3Sub": "Browse through time like flipping through a calendar.",
+      "bmPage.mockConstellation": "My Constellation",
+      "bmPage.mockEntry1": "Our story begins.",
+      "bmPage.mockEntry2": "Luna came<br />into our lives.",
+      "bmPage.mockEntry3": "Our first trip.",
+      "bmPage.mockMoment": "Moment",
+      "bmPage.mockNavJourney": "Journey",
+      "bmPage.mockNavMoments": "Moments",
+      "bmPage.mockNavSearch": "Search",
+      "bmPage.mockNavProfile": "Profile",
+      "bmPage.mockMarried": "We got<br />married.",
+      "bmPage.mockBlockLabel": "Ethereum Block",
+      "bmPage.mockTimestampLabel": "Timestamp",
+      "bmPage.mockTxLabel": "Transaction",
+      "bmPage.mockAuthorLabel": "Author",
+      "bmPage.mockCal1": "We got married.",
+      "bmPage.mockCal2": "Thank you for being with me.",
+      "bmPage.mockCal3": "A peaceful morning.",
+
+      "bmPage.s3Title": "Four steps to forever",
+      "bmPage.step1Title": "Write",
+      "bmPage.step1Desc": "Capture today's moment in a short note, up to 200 characters.",
+      "bmPage.step2Title": "Review",
+      "bmPage.step2Desc": "Once recorded, it can't be edited — so take one last look before you commit.",
+      "bmPage.step3Title": "Record",
+      "bmPage.step3Desc": "It's carved into the blockchain. About 12 seconds — then forever.",
+      "bmPage.step4Title": "Done",
+      "bmPage.step4Desc": "A new star has been added to your constellation.",
+
+      "bmPage.s4Title": "A constellation that grows forever",
+      "bmPage.s4Desc": "The more you record, the wider and brighter your constellation grows.",
+
+      "bmPage.inviteTitle": "Turn today's moment<br />into your first star.",
+      "bmPage.inviteDesc": "Pre-register and we'll be sure to invite you first when we launch.",
+      "bmPage.emailPlaceholder": "Email address",
+      "bmPage.registerBtn": "Pre-register",
+      "bmPage.noSpam": "We won't send spam.",
 
       "beyondTimeline.eyebrow": "A Life, Timelined",
       "beyondTimeline.title": "This is how it adds up",
@@ -313,6 +429,11 @@
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
       if (d[key] !== undefined) el.innerHTML = d[key];
+    });
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+      var phKey = el.getAttribute("data-i18n-placeholder");
+      if (d[phKey] !== undefined) el.setAttribute("placeholder", d[phKey]);
     });
 
     document.querySelectorAll("[data-img-ko][data-img-en]").forEach(function (img) {
