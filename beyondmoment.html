@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=11" />
+<link rel="stylesheet" href="styles.css?v=12" />
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
 <script src="i18n.js?v=6" defer></script>
 <style>
@@ -18,6 +18,7 @@
   .bm main { overflow-x: clip; }
   .bm header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(5,7,15,0.32); border-bottom: 1px solid rgba(160,176,235,0.08); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-family: "Jua", "Pretendard", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
   .bm .logo, .bm .nav-links a, .bm #lang-toggle, .bm .nav-back { color: #dfe4fb; }
+  .bm .nav-links a.nav-active { color: #ffd9a0; }
   .bm-icon-hero { width: 96px; height: 96px; border-radius: 24px; margin: 0 auto 4px; border: 1px solid rgba(206,216,255,0.24); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
   .bm .nav-links a:hover { color: #ffd9a0; }
   .bm .btn-ghost.nav-back, .bm #lang-toggle { border-color: rgba(206,216,255,0.22); }
@@ -107,8 +108,9 @@
     <nav>
       <a href="index.html" class="logo"><img src="assets/moonik-logo-nav.png" alt="MoonIK" /></a>
       <div class="nav-links">
-        <a href="index.html#apps" data-i18n="nav.apps">앱 라인업</a>
         <a href="about.html" data-i18n="nav.about">회사 소개</a>
+        <a href="dallae.html" data-i18n="nav.dallae">달래</a>
+        <a href="beyondmoment.html" data-i18n="beyond.name" class="nav-active">BeyondMoment</a>
       </div>
       <div class="nav-actions">
         <button id="lang-toggle" class="btn btn-ghost" onclick="moonikLang.toggle()">EN</button>
