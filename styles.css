@@ -214,6 +214,23 @@ section { padding: 88px 0; }
   border: none; padding: 0; cursor: pointer; transition: width 0.3s, background 0.3s;
 }
 .cf-dot.active { background: var(--accent); width: 22px; }
+#dallae.cf-fade, #beyondmoment.cf-fade {
+  box-sizing: border-box;
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.6s ease, padding 0.6s ease;
+}
+#dallae.cf-fade.cf-visible, #beyondmoment.cf-fade.cf-visible {
+  max-height: 3000px;
+  padding-top: 88px;
+  padding-bottom: 88px;
+  opacity: 1;
+  transform: none;
+}
 @media (max-width: 780px) {
   .cf-arrow { display: none; }
 }
