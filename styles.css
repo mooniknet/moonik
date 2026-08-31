@@ -33,7 +33,7 @@ nav {
 .logo { font-weight: 400; font-size: 20px; letter-spacing: -0.02em; display: flex; align-items: center; gap: 8px; }
 .logo span { color: var(--accent); }
 .logo img { height: 28px; width: auto; display: block; }
-.nav-links { display: flex; gap: 28px; font-size: 14px; color: var(--text-dim); }
+.nav-links { display: flex; gap: 28px; font-size: 16px; color: var(--text-dim); }
 .nav-links a:hover { color: var(--text); }
 .nav-toggle {
   display: none;
@@ -156,7 +156,7 @@ section { padding: 88px 0; }
 .app-card p { color: var(--text-dim); font-size: 13px; }
 .soon-tag {
   display: inline-block; margin-top: 10px;
-  font-size: 11px; font-weight: 400; letter-spacing: 0.04em;
+  font-size: 13px; font-weight: 400; letter-spacing: 0.04em;
   color: var(--text-dim); text-transform: uppercase;
 }
 
@@ -196,7 +196,7 @@ section { padding: 88px 0; }
 .cf-arrow:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 .cf-arrow:disabled { opacity: 0.3; cursor: default; }
 .cf-captions {
-  position: relative; max-width: 360px; margin: 4px auto 0; text-align: center; min-height: 92px;
+  position: relative; max-width: 420px; margin: 4px auto 0; text-align: center; min-height: 108px;
 }
 .cf-caption {
   position: absolute; inset: 0;
@@ -204,8 +204,8 @@ section { padding: 88px 0; }
   pointer-events: none;
 }
 .cf-caption.active { opacity: 1; transform: none; pointer-events: auto; }
-.cf-caption h4 { font-size: 18px; font-weight: 400; margin-bottom: 6px; }
-.cf-caption p { font-size: 13px; color: var(--text-dim); margin-bottom: 8px; }
+.cf-caption h4 { font-size: 24px; font-weight: 400; margin-bottom: 8px; }
+.cf-caption p { font-size: 16px; color: var(--text-dim); margin-bottom: 10px; }
 .cf-dots { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 18px; }
 .cf-dot {
   width: 8px; height: 8px; border-radius: 999px; background: var(--border);
