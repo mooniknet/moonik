@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=4" />
+<link rel="stylesheet" href="styles.css?v=5" />
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
 <script src="i18n.js?v=5" defer></script>
 </head>
@@ -46,27 +46,46 @@
         <h2 data-i18n="apps.title">MoonIK의 앱 라인업</h2>
         <p data-i18n="apps.desc">달래를 시작으로 다양한 일상 속 앱을 계속 선보일 예정입니다.</p>
       </div>
-      <div class="apps-grid">
-        <a href="dallae.html" class="app-card" style="cursor:pointer;">
-          <div class="app-icon-sm" style="background:transparent; padding:0;">
-            <img src="assets/dallae-icon-64.png" alt="달래 아이콘" class="dallae-icon-float" style="width:64px; height:64px; border-radius:18px;" />
+      <div class="cf-carousel" id="cfCarousel">
+        <button class="cf-arrow cf-prev" id="cfPrev" aria-label="Previous">‹</button>
+        <div class="cf-frame" id="cfFrame" tabindex="0">
+          <div class="cf-track" id="cfTrack">
+            <div class="cf-card" data-index="0" data-href="dallae.html">
+              <img src="assets/dallae-icon.png" alt="달래" draggable="false" />
+            </div>
+            <div class="cf-card cf-card-beyond" data-index="1" data-href="beyondmoment.html">
+              <span class="cf-emoji">✨</span>
+            </div>
+            <div class="cf-card cf-card-soon" data-index="2">
+              <span class="cf-q">?</span>
+            </div>
           </div>
+        </div>
+        <button class="cf-arrow cf-next" id="cfNext" aria-label="Next">›</button>
+      </div>
+
+      <div class="cf-captions" id="cfCaptions">
+        <div class="cf-caption active" data-index="0">
           <h4 data-i18n="dallae.name">달래</h4>
           <p data-i18n="dallae.tagline">시간을 심으면 정원이 자라는 목표 관리 앱</p>
           <span class="soon-tag" style="color:var(--accent2);" data-i18n="dallae.devStatus">개발 중</span>
-        </a>
-        <a href="beyondmoment.html" class="app-card" style="cursor:pointer;">
-          <div class="app-icon-sm" style="background:linear-gradient(135deg, var(--accent), var(--accent2)); color:#0d1424;">✨</div>
+        </div>
+        <div class="cf-caption" data-index="1">
           <h4 data-i18n="beyond.name">BeyondMoment</h4>
           <p data-i18n="beyond.tagline">소중한 순간들을 타임라인으로 남기는 서비스</p>
           <span class="soon-tag" style="color:var(--accent2);" data-i18n="beyond.status">구상 중</span>
-        </a>
-        <div class="app-card soon">
-          <div class="app-icon-sm">?</div>
+        </div>
+        <div class="cf-caption" data-index="2">
           <h4 data-i18n="appcard2.title">다음 앱 준비 중</h4>
           <p data-i18n="appcard3.desc">더 많은 이야기로 곧 찾아뵐게요.</p>
           <span class="soon-tag">Coming Soon</span>
         </div>
+      </div>
+
+      <div class="cf-dots" id="cfDots">
+        <button class="cf-dot active" data-index="0" aria-label="달래"></button>
+        <button class="cf-dot" data-index="1" aria-label="BeyondMoment"></button>
+        <button class="cf-dot" data-index="2" aria-label="Coming soon"></button>
       </div>
     </div>
   </section>
@@ -156,6 +175,151 @@
     </div>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var carousel = document.getElementById('cfCarousel');
+    if (!carousel) return;
+    var frame = document.getElementById('cfFrame');
+    var track = document.getElementById('cfTrack');
+    var cards = Array.prototype.slice.call(track.querySelectorAll('.cf-card'));
+    var captions = Array.prototype.slice.call(document.querySelectorAll('.cf-caption'));
+    var dots = Array.prototype.slice.call(document.querySelectorAll('.cf-dot'));
+    var prevBtn = document.getElementById('cfPrev');
+    var nextBtn = document.getElementById('cfNext');
+    var count = cards.length;
+
+    var ROTATE = 42, DEPTH = 0.55, FALLOFF = 0.6, FADE = 0.12, GAP = 0.14;
+    var pos = 0, target = 0, width = 0, raf = null, selected = 0;
+
+    function clamp(p) { return Math.max(0, Math.min(count - 1, p)); }
+
+    function paint() {
+      if (!width) return;
+      var pitch = width * (1 + GAP);
+      cards.forEach(function (card, i) {
+        var offset = i - pos;
+        var distance = Math.abs(offset);
+        var ramp = Math.pow(distance, FALLOFF);
+        var tilt = Math.min(ROTATE * ramp, 82) * Math.sign(offset);
+        card.style.transform =
+          'translateX(calc(-50% + ' + (offset * pitch) + 'px)) ' +
+          'translateZ(' + (-DEPTH * width * ramp) + 'px) rotateY(' + (-tilt) + 'deg)';
+        card.style.opacity = String(Math.max(0, 1 - FADE * distance));
+        card.style.zIndex = String(100 - Math.round(distance * 10));
+      });
+    }
+
+    function updateUI() {
+      captions.forEach(function (c) {
+        c.classList.toggle('active', Number(c.getAttribute('data-index')) === selected);
+      });
+      dots.forEach(function (d, i) { d.classList.toggle('active', i === selected); });
+      if (prevBtn) prevBtn.disabled = selected === 0;
+      if (nextBtn) nextBtn.disabled = selected === count - 1;
+    }
+
+    function settle(t) {
+      target = clamp(t);
+      var newSelected = Math.round(target);
+      if (newSelected !== selected) { selected = newSelected; updateUI(); }
+      if (raf !== null) cancelAnimationFrame(raf);
+      function step() {
+        var remaining = target - pos;
+        if (Math.abs(remaining) < 0.001) { pos = target; paint(); raf = null; return; }
+        pos += remaining * 0.18;
+        paint();
+        raf = requestAnimationFrame(step);
+      }
+      raf = requestAnimationFrame(step);
+    }
+
+    function goTo(index) { settle(index); }
+    function nudge(by) { settle(Math.round(target) + by); }
+
+    if (prevBtn) prevBtn.addEventListener('click', function () { nudge(-1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { nudge(1); });
+    dots.forEach(function (d, i) { d.addEventListener('click', function () { goTo(i); }); });
+
+    var suppressNextClick = false;
+    // Delegated on the frame, not per-card: a tilted side card's real
+    // painted shape is a foreshortened quad, not its axis-aligned bounding
+    // box, so a click near its edge can land just outside any card element.
+    // Falling back to "which side of centre was clicked" keeps those clicks
+    // useful instead of silently doing nothing.
+    frame.addEventListener('click', function (e) {
+      if (suppressNextClick) { suppressNextClick = false; return; }
+      var cardEl = e.target.closest && e.target.closest('.cf-card');
+      var i = cardEl ? cards.indexOf(cardEl) : -1;
+      if (i === -1) {
+        var frameBox = frame.getBoundingClientRect();
+        nudge(e.clientX < frameBox.left + frameBox.width / 2 ? -1 : 1);
+        return;
+      }
+      if (i === selected) {
+        var href = cards[i].getAttribute('data-href');
+        if (href) window.location.href = href;
+      } else {
+        goTo(i);
+      }
+    });
+
+    frame.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') nudge(-1);
+      if (e.key === 'ArrowRight') nudge(1);
+    });
+
+    var drag = null;
+    frame.addEventListener('pointerdown', function (e) {
+      if (raf !== null) { cancelAnimationFrame(raf); raf = null; }
+      // Capture is deferred to the first real move (see pointermove below) --
+      // capturing here would route the click event to the frame instead of
+      // whichever card is under the cursor, breaking click-to-navigate.
+      target = pos;
+      drag = { id: e.pointerId, x: e.clientX, startPos: pos, v: 0, t: performance.now(), moved: false };
+    });
+    frame.addEventListener('pointermove', function (e) {
+      if (!drag || drag.id !== e.pointerId || !width) return;
+      var pitch = width * (1 + GAP);
+      var now = performance.now();
+      var prevPos = pos;
+      if (!drag.moved && Math.abs(e.clientX - drag.x) > 8) {
+        drag.moved = true;
+        frame.setPointerCapture(drag.id);
+      }
+      if (!drag.moved) return; // still within click tolerance; don't move the carousel yet
+      pos = clamp(drag.startPos - (e.clientX - drag.x) / pitch);
+      drag.v = (pos - prevPos) / Math.max(now - drag.t, 1) * 1000;
+      drag.t = now;
+      var newSelected = Math.round(pos);
+      if (newSelected !== selected) { selected = newSelected; updateUI(); }
+      paint();
+    });
+    function endDrag(e) {
+      if (!drag || drag.id !== e.pointerId) return;
+      var v = drag.v;
+      var wasMoved = drag.moved;
+      drag = null;
+      if (wasMoved) {
+        suppressNextClick = true;
+        var carried = Math.max(-1, Math.min(1, v * 0.15));
+        settle(Math.round(pos + carried));
+      }
+    }
+    frame.addEventListener('pointerup', endDrag);
+    frame.addEventListener('pointercancel', endDrag);
+
+    function measure() {
+      width = cards[0].offsetWidth;
+      paint();
+    }
+    measure();
+    window.addEventListener('resize', measure);
+    if ('ResizeObserver' in window) new ResizeObserver(measure).observe(carousel);
+
+    updateUI();
+  })();
+</script>
 
 </body>
 </html>
