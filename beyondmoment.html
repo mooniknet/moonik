@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=12" />
+<link rel="stylesheet" href="styles.css?v=13" />
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
 <script src="i18n.js?v=6" defer></script>
 <style>
@@ -16,14 +16,9 @@
   .bm-serif { font-family: "Cormorant Garamond", serif; }
   .bm-mono { font-family: "IBM Plex Mono", monospace; }
   .bm main { overflow-x: clip; }
-  .bm header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(5,7,15,0.32); border-bottom: 1px solid rgba(160,176,235,0.08); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-family: "Jua", "Pretendard", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-  .bm .logo, .bm .nav-links a, .bm #lang-toggle, .bm .nav-back { color: #dfe4fb; }
-  .bm .nav-links a.nav-active { color: #ffd9a0; }
   .bm-icon-hero { width: 96px; height: 96px; border-radius: 24px; margin: 0 auto 4px; border: 1px solid rgba(206,216,255,0.24); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
-  .bm .nav-links a:hover { color: #ffd9a0; }
-  .bm .btn-ghost.nav-back, .bm #lang-toggle { border-color: rgba(206,216,255,0.22); }
 
-  .bm-hero { position: relative; min-height: 92vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 130px 24px 130px; background: radial-gradient(120% 90% at 50% 8%, #1a2350 0%, #0d1230 38%, #05070f 78%); overflow: hidden; }
+  .bm-hero { position: relative; min-height: 88vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 90px 24px 130px; background: radial-gradient(120% 90% at 50% 8%, #1a2350 0%, #0d1230 38%, #05070f 78%); overflow: hidden; }
   .bm-hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
   .bm-hero .bm-fade { position: absolute; left: 0; right: 0; bottom: -2px; height: 46%; background: linear-gradient(rgba(5,7,15,0) 0%, rgba(5,7,15,0.65) 55%, #05070f 100%); pointer-events: none; }
   .bm-hero-inner { position: relative; display: flex; flex-direction: column; align-items: center; gap: 28px; text-align: center; max-width: 860px; }
