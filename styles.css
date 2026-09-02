@@ -45,7 +45,8 @@ nav {
   cursor: pointer; font-family: inherit;
 }
 .nav-actions { justify-self: end; display: flex; align-items: center; gap: 10px; flex: 0 0 auto; }
-#lang-toggle { padding: 8px 14px; font-size: 13px; flex: 0 0 auto; }
+#lang-toggle { padding: 8px 14px; font-size: 13px; flex: 0 0 auto; height: 40px; }
+.nav-back { height: 40px; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 10px 20px; border-radius: 999px;
@@ -366,8 +367,8 @@ footer a:hover { color: var(--text); }
   .nav-cta { display: none; }
   .logo { font-size: 17px; gap: 4px; }
   .nav-actions { gap: 6px; }
-  #lang-toggle { padding: 6px 10px; font-size: 12px; }
-  .nav-back { padding: 6px 10px; font-size: 12px; }
+  #lang-toggle { padding: 6px 10px; font-size: 12px; height: 32px; }
+  .nav-back { padding: 6px 10px; font-size: 12px; height: 32px; }
   .nav-links {
     display: none;
     position: absolute; top: 100%; left: 0; right: 0;
