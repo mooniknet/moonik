@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title data-i18n-title="termsPage.title">이용약관 | MoonIK</title>
+<meta name="description" content="문익(MoonIK) 웹사이트와 달래, BeyondMoment 서비스 이용에 관한 약관입니다." data-i18n-content="termsPage.desc" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=24" />
+<link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
+<script src="i18n.js?v=9" defer></script>
+<style>
+  .legal-content { max-width: 720px; margin: 0 auto; color: var(--text-dim); font-size: 15px; line-height: 1.9; }
+  .legal-content h3 { color: var(--text); font-size: 19px; font-weight: 400; margin: 40px 0 14px; }
+  .legal-content h3:first-child { margin-top: 0; }
+  .legal-content p { margin-bottom: 14px; }
+  .legal-content ul { margin: 0 0 14px 20px; }
+  .legal-content li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo"><img src="assets/moonik-logo-nav.png" alt="MoonIK" /></a>
+      <div class="nav-links">
+        <a href="about.html" data-i18n="nav.about">회사 소개</a>
+        <a href="dallae.html" data-i18n="nav.dallae">달래</a>
+        <a href="beyondmoment.html" data-i18n="beyond.name">BeyondMoment</a>
+      </div>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="btn btn-ghost" onclick="moonikLang.toggle()">EN</button>
+        <a href="index.html" class="btn btn-ghost nav-back" data-i18n="nav.back">← 메인으로</a>
+        <button class="nav-toggle" onclick="moonikNav.toggle()" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:16px;">
+    <div class="wrap about">
+      <h2 class="page-title" data-i18n="footer.terms">이용약관</h2>
+      <p style="font-size:14px;" data-i18n="terms.updated">최종 수정일: 2026년 9월 5일</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap legal-content">
+      <div data-i18n="terms.intro"></div>
+      <div data-i18n="terms.s1"></div>
+      <div data-i18n="terms.s2"></div>
+      <div data-i18n="terms.s3"></div>
+      <div data-i18n="terms.s4"></div>
+      <div data-i18n="terms.s5"></div>
+      <div data-i18n="terms.s6"></div>
+      <div data-i18n="terms.s7"></div>
+      <div data-i18n="terms.s8"></div>
+      <div data-i18n="terms.s9"></div>
+      <div data-i18n="terms.s10"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; width:100%;">
+    <span>© 2026 MoonIK. All rights reserved.</span>
+    <div class="foot-links">
+      <a href="index.html" data-i18n="footer.home">홈</a>
+      <a href="privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
+      <a href="mailto:moonik.net@gmail.com" data-i18n="footer.contact">문의하기</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

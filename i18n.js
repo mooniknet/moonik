@@ -203,7 +203,39 @@
       "detail4.desc": "친구를 추가하면 서로의 정원을 구경할 수 있어요. 각자의 속도로 목표를 향해 가지만, 친구가 얼마나 가꿔왔는지 보면서 서로에게 작은 자극과 응원이 됩니다. 모든 기록은 클라우드에 안전하게 백업돼요.",
       "cta2.title": "달래의 첫 번째 정원사가 되어주세요",
       "cta2.desc": "지금은 개발 중이에요. 출시 소식을 가장 먼저 받아보고 싶다면 알려주세요.",
-      "cta2.btn2": "MoonIK 홈으로"
+      "cta2.btn2": "MoonIK 홈으로",
+
+      "termsPage.title": "이용약관 | MoonIK",
+      "termsPage.desc": "문익(MoonIK) 웹사이트와 달래, BeyondMoment 서비스 이용에 관한 약관입니다.",
+      "privacyPage.title": "개인정보처리방침 | MoonIK",
+      "privacyPage.desc": "문익(MoonIK)이 개인정보를 수집, 이용, 보호하는 방법을 안내합니다.",
+
+      "terms.updated": "최종 수정일: 2026년 9월 5일",
+      "terms.intro": "<p>이 약관은 문익(MoonIK, 이하 \"회사\")이 운영하는 웹사이트 moonik.net과 회사가 제공하거나 개발 중인 서비스(달래, BeyondMoment 등, 이하 \"서비스\")의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항을 규정합니다.</p>",
+      "terms.s1": "<h3>제1조 (목적)</h3><p>이 약관은 회사가 제공하는 서비스의 이용조건 및 절차, 회사와 이용자의 권리·의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</p>",
+      "terms.s2": "<h3>제2조 (정의)</h3><ul><li>\"서비스\"란 회사가 웹사이트 및 애플리케이션을 통해 이용자에게 제공하는 일체의 서비스를 의미합니다.</li><li>\"이용자\"란 이 약관에 따라 회사가 제공하는 서비스를 이용하는 자를 말합니다.</li><li>\"콘텐츠\"란 서비스를 이용하는 과정에서 회사가 제공하거나 이용자가 생성하는 부호, 문자, 이미지, 영상 등의 정보를 말합니다.</li></ul>",
+      "terms.s3": "<h3>제3조 (약관의 효력 및 변경)</h3><p>이 약관은 웹사이트에 게시함으로써 효력이 발생합니다. 회사는 관련 법령을 위배하지 않는 범위에서 약관을 변경할 수 있으며, 변경된 약관은 적용일자와 변경사유를 명시하여 시행일 최소 7일 전(이용자에게 불리한 변경은 30일 전)부터 웹사이트를 통해 공지합니다. 이용자가 변경된 약관에 동의하지 않을 경우 서비스 이용을 중단하고 이용을 종료할 수 있습니다.</p>",
+      "terms.s4": "<h3>제4조 (서비스의 제공 및 변경)</h3><p>회사는 목표 관리 및 성장 기록 서비스 \"달래\", 순간을 기록하고 보존하는 서비스 \"BeyondMoment\" 등을 제공하거나 준비하고 있습니다. 현재 달래는 개발 중이며 BeyondMoment는 구상 단계로 정식 출시 전입니다. 회사는 서비스의 내용과 출시 일정을 사전 고지 없이 변경할 수 있으며, 서비스의 품질 향상을 위해 서비스의 전부 또는 일부를 수정하거나 중단할 수 있습니다. 이 경우 가능한 사전에 공지하며, 불가피한 경우 사후에 통지할 수 있습니다.</p>",
+      "terms.s5": "<h3>제5조 (이용자의 의무)</h3><p>이용자는 타인의 정보를 도용하거나, 회사의 서비스 운영을 방해하거나, 서비스를 통해 얻은 정보를 회사의 사전 승낙 없이 복제·유통·상업적으로 이용하는 등 관계 법령 및 이 약관에서 금지하는 행위를 하여서는 안 됩니다.</p>",
+      "terms.s6": "<h3>제6조 (지적재산권)</h3><p>서비스와 관련하여 회사가 작성한 저작물에 대한 저작권 및 기타 지적재산권은 회사에 귀속됩니다. 이용자는 서비스를 이용하여 얻은 정보 중 회사에 지적재산권이 귀속된 정보를 회사의 사전 승낙 없이 복제, 송신, 출판, 배포, 방송 등의 방법으로 영리 목적으로 이용하거나 제3자에게 이용하게 할 수 없습니다.</p>",
+      "terms.s7": "<h3>제7조 (면책조항)</h3><p>회사가 소개하는 서비스 중 구상·개발 단계에 있는 항목은 정식 출시 전까지 내용과 기능, 출시 여부가 변경될 수 있습니다. 회사는 천재지변 등 불가항력적 사유로 서비스를 제공할 수 없는 경우, 그리고 이용자의 귀책사유로 발생한 서비스 이용 장애에 대해서는 책임을 지지 않습니다.</p>",
+      "terms.s8": "<h3>제8조 (분쟁해결 및 관할법원)</h3><p>회사와 이용자는 서비스와 관련하여 발생한 분쟁을 원만하게 해결하기 위해 노력하며, 분쟁이 해결되지 않을 경우 민사소송법상의 관할법원에 소를 제기할 수 있습니다.</p>",
+      "terms.s9": "<h3>제9조 (문의)</h3><p>서비스 이용과 관련한 문의는 아래 이메일로 연락해 주시기 바랍니다.</p><p><strong>이메일:</strong> moonik.net@gmail.com</p>",
+      "terms.s10": "<h3>부칙</h3><p>이 약관은 2026년 9월 5일부터 시행합니다.</p>",
+
+      "privacy.updated": "최종 수정일: 2026년 9월 5일",
+      "privacy.intro": "<p>문익(MoonIK, 이하 \"회사\")은 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 등 관련 법령을 준수하기 위해 노력하고 있습니다. 본 개인정보처리방침은 회사가 수집하는 개인정보의 항목, 수집 및 이용 목적, 보유 기간 등을 안내합니다.</p>",
+      "privacy.s1": "<h3>1. 수집하는 개인정보 항목 및 수집 방법</h3><p>회사는 현재 정식 서비스 출시 전이며, 웹사이트(moonik.net)에서 별도의 회원가입 절차 없이 다음과 같은 방식으로만 개인정보를 수집합니다.</p><ul><li>수집 항목: 이메일 주소</li><li>수집 방법: 이용자가 웹사이트의 \"문의하기\", \"출시 소식 받기\", \"사전 등록\" 버튼을 눌러 본인의 이메일 클라이언트를 통해 회사 이메일(moonik.net@gmail.com)로 직접 이메일을 보내는 방식이며, 이 과정에서 이용자의 이메일 주소가 회사 서버에 별도로 저장되지 않습니다.</li></ul>",
+      "privacy.s2": "<h3>2. 개인정보의 수집 및 이용 목적</h3><p>회사는 수집한 이메일 주소를 문의사항 응답, 서비스 출시 소식 및 사전 등록 안내, 이용자와의 원활한 커뮤니케이션 목적으로만 이용합니다.</p>",
+      "privacy.s3": "<h3>3. 개인정보의 보유 및 이용 기간</h3><p>회사는 이용자가 보낸 이메일을 목적을 달성할 때까지 보관하며, 목적이 달성된 이후에는 지체 없이 파기합니다. 다만 관계 법령에 따라 보존이 필요한 경우 해당 법령이 정한 기간 동안 보관합니다.</p>",
+      "privacy.s4": "<h3>4. 개인정보의 제3자 제공</h3><p>회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만 이용자가 사전에 동의하였거나 법령에 근거하여 수사기관의 적법한 요청이 있는 경우는 예외로 합니다.</p>",
+      "privacy.s5": "<h3>5. 개인정보 처리의 위탁</h3><p>회사는 현재 개인정보 처리 업무를 외부 업체에 위탁하고 있지 않습니다. 향후 위탁이 필요한 경우 사전에 이용자에게 고지하고 필요한 절차를 거치겠습니다.</p>",
+      "privacy.s6": "<h3>6. 쿠키 등 자동 수집 장치의 운영</h3><p>회사는 현재 웹사이트에서 방문자 추적 쿠키나 광고·분석 목적의 트래킹 도구를 사용하지 않습니다. 다만 이용자가 선택한 언어 설정(한국어/영어)을 기억하기 위해 브라우저의 로컬 저장소(Local Storage)에 언어 정보만 저장하며, 이는 개인을 식별할 수 있는 정보를 포함하지 않고 이용자의 기기에만 저장됩니다.</p>",
+      "privacy.s7": "<h3>7. 이용자의 권리와 행사 방법</h3><p>이용자는 언제든지 회사에 자신의 개인정보에 대한 열람, 정정, 삭제, 처리정지를 요청할 수 있으며, 아래 문의처를 통해 요청하실 수 있습니다.</p>",
+      "privacy.s8": "<h3>8. 개인정보의 안전성 확보 조치</h3><p>회사는 개인정보 취급자를 최소화하고, 이메일을 통해 수신한 정보에 대한 접근 권한을 관리하는 등 개인정보의 안전성을 확보하기 위해 노력하고 있습니다.</p>",
+      "privacy.s9": "<h3>9. 개인정보 보호책임자 및 문의처</h3><p>개인정보 처리에 관한 문의, 불만처리, 피해구제 등을 위해 아래로 연락해 주시기 바랍니다.</p><p><strong>담당:</strong> 문익(MoonIK) 운영팀<br /><strong>이메일:</strong> moonik.net@gmail.com</p>",
+      "privacy.s10": "<h3>10. 개인정보처리방침의 변경</h3><p>이 개인정보처리방침은 법령, 정책 또는 보안 기술의 변경에 따라 내용이 추가·삭제·수정될 수 있으며, 변경 시 시행 최소 7일 전부터 웹사이트를 통해 공지합니다.</p>",
+      "privacy.s11": "<h3>부칙</h3><p>이 개인정보처리방침은 2026년 9월 5일부터 시행합니다.</p>"
     },
     en: {
       "meta.title": "MoonIK — So Small Moments Last",
@@ -408,7 +440,39 @@
       "detail4.desc": "Add friends to browse each other's gardens. Everyone moves toward their goals at their own pace, but seeing how far a friend's garden has grown becomes a small spark of motivation and support. Everything is safely backed up to the cloud.",
       "cta2.title": "Become Dallae's first gardener",
       "cta2.desc": "We're still building it. Let us know if you'd like to be the first to hear when it launches.",
-      "cta2.btn2": "Back to MoonIK home"
+      "cta2.btn2": "Back to MoonIK home",
+
+      "termsPage.title": "Terms of Service | MoonIK",
+      "termsPage.desc": "Terms of Service for MoonIK's website and services, including Dallae and BeyondMoment.",
+      "privacyPage.title": "Privacy Policy | MoonIK",
+      "privacyPage.desc": "How MoonIK collects, uses, and protects your information.",
+
+      "terms.updated": "Last updated: September 5, 2026",
+      "terms.intro": "<p>These Terms of Service (\"Terms\") govern your use of the website moonik.net and the services provided or under development by MoonIK (\"Company\"), including Dallae and BeyondMoment (collectively, the \"Service\"), and set out the rights, obligations, and responsibilities between the Company and users.</p>",
+      "terms.s1": "<h3>Article 1 (Purpose)</h3><p>These Terms set out the conditions and procedures for using the Service, the rights and obligations of the Company and users, and other necessary matters.</p>",
+      "terms.s2": "<h3>Article 2 (Definitions)</h3><ul><li>\"Service\" means all services provided to users by the Company through its website and applications.</li><li>\"User\" means a person who uses the Service under these Terms.</li><li>\"Content\" means any text, image, video, or other information provided by the Company or created by a user while using the Service.</li></ul>",
+      "terms.s3": "<h3>Article 3 (Effect and Amendment of Terms)</h3><p>These Terms take effect when posted on the website. The Company may amend these Terms within the scope permitted by applicable law, and will announce the effective date and reason for any change on the website at least 7 days before it takes effect (30 days for changes unfavorable to users). If a user does not agree to the amended Terms, they may stop using the Service and terminate their use.</p>",
+      "terms.s4": "<h3>Article 4 (Provision and Modification of the Service)</h3><p>The Company provides or is preparing to provide Dallae, a goal-tracking and growth-journaling service, and BeyondMoment, a service for recording and preserving meaningful moments. Dallae is currently in development and BeyondMoment is at the concept stage, prior to official launch. The Company may change the content or launch schedule of the Service without prior notice, and may modify or suspend all or part of the Service to improve its quality. The Company will provide advance notice where possible, or notice afterward when unavoidable.</p>",
+      "terms.s5": "<h3>Article 5 (User Obligations)</h3><p>Users must not impersonate others, interfere with the Company's operation of the Service, reproduce, distribute, or commercially use information obtained through the Service without the Company's prior consent, or engage in any act prohibited by applicable law or these Terms.</p>",
+      "terms.s6": "<h3>Article 6 (Intellectual Property)</h3><p>Copyright and other intellectual property rights in works created by the Company in connection with the Service belong to the Company. Users may not reproduce, transmit, publish, distribute, broadcast, or otherwise commercially exploit information to which the Company holds intellectual property rights, without the Company's prior consent.</p>",
+      "terms.s7": "<h3>Article 7 (Disclaimer)</h3><p>For any part of the Service that the Company introduces while still at the concept or development stage, the content, features, and launch itself may change before an official release. The Company is not liable for any failure to provide the Service due to force majeure, or for service disruptions caused by a user's own fault.</p>",
+      "terms.s8": "<h3>Article 8 (Dispute Resolution and Jurisdiction)</h3><p>The Company and users will make reasonable efforts to amicably resolve any disputes arising in connection with the Service. If a dispute cannot be resolved, either party may bring an action before a court of competent jurisdiction under the Civil Procedure Act.</p>",
+      "terms.s9": "<h3>Article 9 (Contact)</h3><p>For any questions about using the Service, please contact us at the email address below.</p><p><strong>Email:</strong> moonik.net@gmail.com</p>",
+      "terms.s10": "<h3>Addendum</h3><p>These Terms take effect on September 5, 2026.</p>",
+
+      "privacy.updated": "Last updated: September 5, 2026",
+      "privacy.intro": "<p>MoonIK (\"Company\") values your personal information and strives to comply with applicable data protection laws. This Privacy Policy explains what personal information the Company collects, why, and for how long it is kept.</p>",
+      "privacy.s1": "<h3>1. Information Collected and How</h3><p>The Company has not yet launched its official service and does not require account registration on its website (moonik.net). Personal information is collected only as follows.</p><ul><li>Information collected: email address</li><li>How it's collected: when a user chooses \"Contact\", \"Get launch updates\", or \"Pre-register\" on the website, their own email client opens and they send an email directly to the Company's address (moonik.net@gmail.com). No email address is stored on the Company's servers through this process itself.</li></ul>",
+      "privacy.s2": "<h3>2. Purpose of Collection and Use</h3><p>The Company uses collected email addresses only to respond to inquiries, share launch updates and pre-registration information, and communicate with users.</p>",
+      "privacy.s3": "<h3>3. Retention Period</h3><p>The Company retains emails sent by users until the purpose for which they were collected is fulfilled, after which they are promptly deleted. Where retention is required by law, information is kept for the period required by that law.</p>",
+      "privacy.s4": "<h3>4. Sharing with Third Parties</h3><p>The Company does not share users' personal information with third parties, except where a user has given prior consent or where disclosure is required by law or a lawful request from an investigative authority.</p>",
+      "privacy.s5": "<h3>5. Outsourcing of Data Processing</h3><p>The Company does not currently outsource any personal information processing to external parties. If this becomes necessary, users will be notified in advance and any required procedures will be followed.</p>",
+      "privacy.s6": "<h3>6. Cookies and Automatic Data Collection</h3><p>The Company does not currently use tracking cookies or analytics/advertising tools on its website. To remember a user's chosen language (Korean/English), the site stores only that language preference in the browser's local storage. This information does not identify any individual and stays only on the user's own device.</p>",
+      "privacy.s7": "<h3>7. User Rights</h3><p>Users may request to view, correct, delete, or restrict the processing of their personal information at any time by contacting the Company using the details below.</p>",
+      "privacy.s8": "<h3>8. Security Measures</h3><p>The Company limits the number of staff with access to personal information and manages access to information received by email in order to keep it secure.</p>",
+      "privacy.s9": "<h3>9. Data Protection Contact</h3><p>For any questions, complaints, or requests regarding personal information, please contact us below.</p><p><strong>Team:</strong> MoonIK Operations<br /><strong>Email:</strong> moonik.net@gmail.com</p>",
+      "privacy.s10": "<h3>10. Changes to this Policy</h3><p>This Privacy Policy may be added to, removed, or amended due to changes in law, policy, or security practices. Any such changes will be announced on the website at least 7 days before they take effect.</p>",
+      "privacy.s11": "<h3>Addendum</h3><p>This Privacy Policy takes effect on September 5, 2026.</p>"
     }
   };
 
