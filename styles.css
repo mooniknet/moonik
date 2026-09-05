@@ -104,14 +104,10 @@ section { padding: 88px 0; }
   background-size: cover; background-position: center;
 }
 .flagship::before {
-  content: ""; position: absolute; inset: 0; z-index: 1;
+  content: ""; position: absolute; inset: 0; z-index: 0;
   background: linear-gradient(100deg, rgba(9,12,23,0.88) 0%, rgba(9,12,23,0.72) 45%, rgba(9,12,23,0.42) 100%);
 }
-.flagship > .flagship-visual, .flagship > .flagship-body { position: relative; z-index: 2; }
-.flagship-bg-video {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; z-index: 0;
-}
+.flagship > * { position: relative; z-index: 1; }
 #dallae .flagship { background-image: url("assets/dallae-garden-bg.jpg"); }
 #beyondmoment .flagship { background-image: url("assets/beyondmoment-bg.jpg?v=2"); }
 .flagship-visual {
@@ -257,6 +253,11 @@ html[lang="en"] .cf-captions {
   opacity: 0;
   transition: opacity 0.9s ease;
   z-index: 0;
+}
+.cf-bg video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
 }
 .cf-bg::after {
   content: ""; position: absolute; inset: 0;
