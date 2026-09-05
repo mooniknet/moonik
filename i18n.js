@@ -419,11 +419,43 @@
     try { localStorage.setItem(key, value); } catch (e) {}
   }
 
+  function getUrlLang() {
+    try {
+      var v = (new URLSearchParams(location.search).get("lang") || "").toLowerCase();
+      if (v === "ko" || v === "en") return v;
+    } catch (e) {}
+    return null;
+  }
+
   function detectLang() {
+    var urlLang = getUrlLang();
+    if (urlLang) return urlLang;
     var saved = safeGet("moonik-lang");
     if (saved === "ko" || saved === "en") return saved;
     var nav = (navigator.language || navigator.userLanguage || "en").toLowerCase();
     return nav.indexOf("ko") === 0 ? "ko" : "en";
+  }
+
+  function syncUrlLang(lang) {
+    try {
+      var params = new URLSearchParams(location.search);
+      params.set("lang", lang);
+      history.replaceState(null, "", location.pathname + "?" + params.toString() + location.hash);
+    } catch (e) {}
+  }
+
+  function syncLinksLang(lang) {
+    document.querySelectorAll("a[href]").forEach(function (a) {
+      var base = a.getAttribute("data-base-href");
+      if (base === null) {
+        var href = a.getAttribute("href") || "";
+        var stripped = href.split("?")[0].split("#")[0];
+        if (!/^[a-z0-9_-]+\.html$/i.test(stripped)) return;
+        base = stripped;
+        a.setAttribute("data-base-href", base);
+      }
+      a.setAttribute("href", base + "?lang=" + lang);
+    });
   }
 
   function applyLang(lang) {
@@ -463,6 +495,8 @@
     if (toggle) toggle.textContent = lang === "ko" ? "EN" : "한국어";
 
     safeSet("moonik-lang", lang);
+    syncUrlLang(lang);
+    syncLinksLang(lang);
   }
 
   window.moonikLang = {
