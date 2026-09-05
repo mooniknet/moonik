@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=24" />
+<link rel="stylesheet" href="styles.css?v=25" />
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
 <script src="i18n.js?v=9" defer></script>
 </head>
@@ -98,12 +98,12 @@
   <section id="dallae">
     <div class="wrap">
       <div class="flagship">
-        <div class="flagship-visual">
+        <div class="flagship-visual" style="flex-direction: column; gap: 16px;">
           <img src="assets/dallae-icon.png" alt="달래 앱 아이콘" class="dallae-icon-float" style="width:140px; height:140px; border-radius:32px;" />
+          <h4 class="flagship-visual-name" data-i18n="dallae.name">달래</h4>
         </div>
         <div class="flagship-body">
           <span class="flagship-badge" data-i18n="dallae.badge">MoonIK의 첫 번째 앱</span>
-          <h3 data-i18n="dallae.nameFull">달래</h3>
           <p class="flagship-headline" data-i18n="garden.headline">시간을 심으면<br /><span class="accent">정원이 자랍니다</span></p>
           <p class="desc" data-i18n="dallae.desc">달래는 이루고 싶은 목표를 씨앗으로 심고, 거기에 쏟은 시간만큼 나만의 정원에 꽃을 피우는 성장 앱입니다. 진달래, 패랭이꽃 같은 한국의 자생화가 내가 투자한 시간을 따라 하나씩 피어나요.</p>
           <div class="mini-features">
@@ -134,7 +134,6 @@
       <div class="flagship">
         <div class="flagship-body">
           <span class="flagship-badge" data-i18n="beyond.badge">MoonIK의 두 번째 앱 · 구상 중</span>
-          <h3 data-i18n="beyond.name">BeyondMoment</h3>
           <p class="flagship-headline" data-i18n="beyond.headline">순간들이 모여,<br /><span class="accent">하나의 인생이 됩니다</span></p>
           <p class="desc" data-i18n="beyond.desc">BeyondMoment는 살아가며 쌓아온 소중한 기억을 하나의 타임라인으로 엮고, 사람이 직접 확인한 중요한 기록을 블록체인 기술을 이용해 영원히 남기는 서비스를 구상하고 있습니다. 연인과 가족, 그리고 나 자신의 이야기가 시간이 지나도 사라지지 않도록 만듭니다.</p>
           <div class="mini-features">
@@ -156,8 +155,9 @@
             <a href="mailto:moonik.net@gmail.com" class="btn btn-ghost" data-i18n="beyond.cta1">소식 받아보기</a>
           </div>
         </div>
-        <div class="flagship-visual" style="flex-direction: column; gap: 22px; padding: 28px;">
+        <div class="flagship-visual" style="flex-direction: column; gap: 16px; padding: 28px; height: auto;">
           <img src="assets/beyondmoment-icon.png?v=2" alt="BeyondMoment" style="width:140px; height:140px; border-radius:32px; flex-shrink:0; object-fit:cover;" />
+          <h4 class="flagship-visual-name" data-i18n="beyond.name">BeyondMoment</h4>
           <div class="timeline-list" style="width:100%; max-width:340px; background:var(--bg); padding:2px 24px;">
             <div class="timeline-row" style="font-size:16px; padding:15px 0;"><span class="dot"></span><span data-i18n="beyondTimeline.item1">2026 — 우리가 처음 만난 날 ❤️</span></div>
             <div class="timeline-row" style="font-size:16px; padding:15px 0;"><span class="dot"></span><span data-i18n="beyondTimeline.item2">2029 — 결혼 💍</span></div>

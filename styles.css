@@ -116,6 +116,7 @@ section { padding: 88px 0; }
   color: var(--text-dim); font-size: 15px;
   overflow: hidden;
 }
+.flagship-visual-name { font-size: 22px; font-weight: 400; color: var(--text); text-align: center; }
 .app-icon {
   width: 56px; height: 56px; border-radius: 16px;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
